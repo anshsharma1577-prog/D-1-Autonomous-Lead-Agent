@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-tertiary-container": "#002d40", "on-surface-variant": "#c7c4d7", "surface-container-lowest": "#010f1f", "surface-container-highest": "#273647", "tertiary-fixed-dim": "#7bd0ff", "on-background": "#d4e4fa", "primary-container": "#8083ff", "tertiary-container": "#009bd1", "primary-fixed": "#e1e0ff", "inverse-surface": "#d4e4fa", "error-container": "#93000a", "inverse-primary": "#494bd6", "on-primary-fixed": "#07006c", "on-surface": "#d4e4fa", "surface-dim": "#051424", "secondary": "#45dfa4", "secondary-fixed": "#68fcbf", "surface-tint": "#c0c1ff", "secondary-fixed-dim": "#45dfa4", "primary-fixed-dim": "#c0c1ff", "on-primary-container": "#0d0096", "background": "#051424", "surface-bright": "#2c3a4c", "outline-variant": "#464554", "outline": "#908fa0", "on-primary": "#1000a9", "surface-variant": "#273647", "on-error": "#690005", "surface-container-low": "#0d1c2d", "on-secondary-container": "#00452e", "on-secondary-fixed-variant": "#005137", "on-secondary": "#003825", "surface-container-high": "#1c2b3c", "on-tertiary-fixed": "#001e2c", "secondary-container": "#00bd85", "tertiary-fixed": "#c4e7ff", "on-tertiary": "#00354a", "surface": "#051424", "on-secondary-fixed": "#002114", "surface-container": "#122131", "on-primary-fixed-variant": "#2f2ebe", "tertiary": "#7bd0ff", "error": "#ffb4ab", "on-error-container": "#ffdad6", "inverse-on-surface": "#233143", "primary": "#c0c1ff", "on-tertiary-fixed-variant": "#004c69" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "gutter": "1rem", "space-xl": "2rem", "space-xs": "0.25rem", "space-md": "0.75rem", "margin": "1.5rem", "margin-desktop": "2rem", "gutter-desktop": "1.5rem", "space-sm": "0.5rem", "space-lg": "1.25rem" }, "fontFamily": { "body-sm": ["Geist"], "code-sm": ["JetBrains Mono"], "display-mobile": ["Geist"], "headline-lg": ["Geist"], "headline-lg-mobile": ["Geist"], "label-md": ["Geist"], "display": ["Geist"], "body-md": ["Geist"], "body-lg": ["Geist"], "headline-md": ["Geist"], "label-sm": ["Geist"] }, "fontSize": { "body-sm": ["0.8125rem", { "lineHeight": "1.25rem", "letterSpacing": "0em", "fontWeight": "400" }], "code-sm": ["0.75rem", { "lineHeight": "1rem", "letterSpacing": "0em", "fontWeight": "400" }], "display-mobile": ["1.75rem", { "lineHeight": "2.25rem", "letterSpacing": "-0.02em", "fontWeight": "600" }], "headline-lg": ["1.5rem", { "lineHeight": "2rem", "letterSpacing": "-0.02em", "fontWeight": "600" }], "headline-lg-mobile": ["1.25rem", { "lineHeight": "1.75rem", "letterSpacing": "-0.015em", "fontWeight": "600" }], "label-md": ["0.8125rem", { "lineHeight": "1rem", "letterSpacing": "0em", "fontWeight": "500" }], "display": ["2.25rem", { "lineHeight": "2.75rem", "letterSpacing": "-0.025em", "fontWeight": "600" }], "body-md": ["0.875rem", { "lineHeight": "1.5rem", "letterSpacing": "-0.005em", "fontWeight": "400" }], "body-lg": ["1rem", { "lineHeight": "1.625rem", "letterSpacing": "-0.01em", "fontWeight": "400" }], "headline-md": ["1.125rem", { "lineHeight": "1.5rem", "letterSpacing": "-0.015em", "fontWeight": "500" }], "label-sm": ["0.75rem", { "lineHeight": "0.9375rem", "letterSpacing": "0.01em", "fontWeight": "500" }] } } } };</script></head><body class="bg-background font-body-md text-on-surface antialiased min-h-screen"><aside class="fixed left-0 top-0 bottom-0 w-64 bg-surface-container-lowest flex flex-col z-50 select-none"><div class="h-14 px-space-lg flex items-center justify-between"><div class="flex items-center gap-space-sm"><div class="w-6 h-6 rounded bg-primary-container/20 flex items-center justify-center text-primary"><span class="material-symbols-outlined text-[16px]">polyline</span></div><span class="font-label-md text-label-md tracking-tight text-on-surface font-semibold">Apex Intel</span></div><span class="font-code-sm text-code-sm px-1.5 py-0.5 rounded bg-surface-container-high text-outline">v2.4</span></div><div class="px-space-md py-space-xs"><div class="px-space-sm py-space-xs rounded-lg bg-surface-container-low flex items-center justify-between"><div class="flex flex-col min-w-0"><span class="font-label-sm text-label-sm text-on-surface truncate">Acme Growth</span><div class="flex items-center gap-1.5 mt-0.5"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span><span class="font-code-sm text-code-sm text-outline-variant text-[10px]">Connected</span></div></div><span class="material-symbols-outlined text-outline text-[16px]">unfold_more</span></div></div><div class="px-space-md my-space-xs"><div class="h-px bg-surface-container"></div></div><nav class="flex-1 px-space-md space-y-space-xs" data-active-classes="bg-surface-container-high text-on-surface font-medium"><a class="flex items-center gap-space-sm px-space-sm py-1.5 rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="overview" href="#"><span class="material-symbols-outlined text-[18px]">dashboard</span>Overview</a><a class="flex items-center gap-space-sm px-space-sm py-1.5 rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="icp-builder" href="#"><span class="material-symbols-outlined text-[18px]">filter_alt</span>ICP Builder</a><a class="flex items-center gap-space-sm px-space-sm py-1.5 rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="research" href="#"><span class="material-symbols-outlined text-[18px]">travel_explore</span>Research</a><a aria-current="page" class="flex items-center gap-space-sm px-space-sm py-1.5 rounded-lg transition-colors bg-surface-container-high text-on-surface font-medium" data-path="leads" href="#"><span class="material-symbols-outlined text-[18px]">group</span>Leads</a><a class="flex items-center gap-space-sm px-space-sm py-1.5 rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="saved" href="#"><span class="material-symbols-outlined text-[18px]">bookmark</span>Saved</a><a class="flex items-center gap-space-sm px-space-sm py-1.5 rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="exports" href="#"><span class="material-symbols-outlined text-[18px]">download</span>Exports</a></nav><div class="px-space-md space-y-space-xs"><div class="h-px bg-surface-container"></div><a class="flex items-center gap-space-sm px-space-sm py-1.5 rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="settings" href="#"><span class="material-symbols-outlined text-[18px]">settings</span>Settings</a></div><div class="p-space-md mt-space-xs"><div class="flex items-center gap-space-sm p-space-xs rounded-lg bg-surface-container-low"><div class="w-8 h-8 rounded-full bg-surface-container-highest flex items-center justify-center font-label-md text-label-md text-primary font-medium shrink-0">AS</div><div class="flex flex-col min-w-0"><span class="font-label-md text-label-md text-on-surface truncate">Ansh Sharma</span><span class="font-code-sm text-code-sm text-outline truncate">Head of GTM</span></div></div></div></aside><div class="pl-64 flex flex-col min-h-screen"><header class="fixed top-0 left-64 right-0 h-14 bg-background/80 backdrop-blur-xl z-40 flex items-center justify-between px-margin-desktop"><div class="flex items-center gap-space-sm"><span class="font-body-sm text-body-sm text-outline">Workspace</span><span class="font-body-sm text-body-sm text-outline-variant">/</span><span class="font-label-md text-label-md text-on-surface">Intelligence Pipeline</span></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-sm bg-surface-container-lowest px-space-md py-1 rounded-lg"><span class="material-symbols-outlined text-outline text-[16px]">search</span><input class="bg-transparent border-none outline-none font-body-sm text-body-sm text-on-surface placeholder-outline w-52" placeholder="Search entities, signals..." type="text"/><span class="font-code-sm text-code-sm px-1 py-0.5 rounded bg-surface-container-high text-outline text-[10px]">⌘K</span></div><button class="w-8 h-8 rounded-lg flex items-center justify-center text-outline hover:text-on-surface hover:bg-surface-container-high transition-colors"><span class="material-symbols-outlined text-[18px]">notifications</span></button><div class="h-4 w-px bg-surface-container"></div><div class="flex items-center gap-space-xs px-2 py-1 rounded bg-surface-container text-on-surface"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span><span class="font-code-sm text-code-sm text-on-surface-variant">US-EAST-1</span></div></div></header><main class="w-full pt-14 px-margin-desktop flex-1 bg-background"><div class="flex flex-col w-full pb-space-xl">
+<!-- Top Visual Status Stream & Header -->
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-lg mb-space-lg pt-space-md">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs mb-1">
+<span class="font-code-sm text-code-sm text-secondary uppercase tracking-wider font-medium">Pipeline Target Index</span>
+<span class="text-outline-variant font-code-sm text-code-sm">/</span>
+<span class="font-code-sm text-code-sm text-outline">Real-time enrichment</span>
+</div>
+<h1 class="font-display text-display text-on-surface tracking-tight">Your leads</h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-0.5">Companies that match your customer profile.</p>
+</div>
+<!-- Quick Analytics Strip (Asymmetric Micro-Cards) -->
+<div class="flex items-center gap-space-sm overflow-x-auto pb-1 lg:pb-0">
+<div class="px-space-md py-2 rounded-xl bg-surface-container-low flex items-center gap-space-md shrink-0">
+<div class="flex flex-col">
+<span class="font-code-sm text-code-sm text-outline uppercase">Qualified ICP</span>
+<span class="font-headline-md text-headline-md text-on-surface font-semibold">48 accounts</span>
+</div>
+<div class="w-10 h-7 flex items-end gap-0.5">
+<span class="w-1.5 bg-primary/40 rounded-t h-3"></span>
+<span class="w-1.5 bg-primary/60 rounded-t h-5"></span>
+<span class="w-1.5 bg-primary/80 rounded-t h-4"></span>
+<span class="w-1.5 bg-primary rounded-t h-7"></span>
+</div>
+</div>
+<div class="px-space-md py-2 rounded-xl bg-surface-container-low flex items-center gap-space-md shrink-0">
+<div class="flex flex-col">
+<span class="font-code-sm text-code-sm text-outline uppercase">Median Fit</span>
+<span class="font-headline-md text-headline-md text-secondary font-semibold">88.4</span>
+</div>
+<div class="w-7 h-7 rounded-full bg-secondary/10 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+</div>
+</div>
+<div class="px-space-md py-2 rounded-xl bg-surface-container-low flex items-center gap-space-md shrink-0">
+<div class="flex flex-col">
+<span class="font-code-sm text-code-sm text-outline uppercase">Sync Pulse</span>
+<div class="flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-label-md text-label-md text-on-surface font-medium">99.2% Valid</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Command & Filter Toolbar -->
+<div class="rounded-xl bg-surface-container-low p-space-sm mb-space-md shadow-sm">
+<div class="flex flex-col xl:flex-row items-stretch xl:items-center justify-between gap-space-sm">
+<!-- Search Input with Keyboard Cue -->
+<div class="flex items-center gap-space-sm bg-surface-container-lowest px-space-md py-2 rounded-lg flex-1 min-w-[280px]">
+<span class="material-symbols-outlined text-outline text-[18px]">search</span>
+<input class="bg-transparent border-none outline-none font-body-sm text-body-sm text-on-surface placeholder-outline w-full focus:outline-none" id="leadSearchInput" placeholder="Search by company, industry, or signal..." type="text"/>
+<div class="flex items-center gap-1 shrink-0">
+<kbd class="font-code-sm text-code-sm px-1.5 py-0.5 rounded bg-surface-container-high text-outline text-[10px]">⌘</kbd>
+<kbd class="font-code-sm text-code-sm px-1.5 py-0.5 rounded bg-surface-container-high text-outline text-[10px]">F</kbd>
+</div>
+</div>
+<!-- Controls & Dropdowns Group -->
+<div class="flex flex-wrap items-center gap-space-sm shrink-0">
+<!-- Fit Score Filter Dropdown -->
+<div class="relative">
+<button class="flex items-center gap-space-xs bg-surface-container hover:bg-surface-container-high px-space-md py-2 rounded-lg text-on-surface transition-colors" id="fitScoreDropdownBtn">
+<span class="font-label-sm text-label-sm text-outline">Fit:</span>
+<span class="font-label-md text-label-md text-on-surface font-medium" id="fitFilterLabel">Fit score: 80+</span>
+<span class="material-symbols-outlined text-outline text-[16px]">expand_more</span>
+</button>
+</div>
+<!-- Signals Filter Dropdown -->
+<div class="relative">
+<button class="flex items-center gap-space-xs bg-surface-container hover:bg-surface-container-high px-space-md py-2 rounded-lg text-on-surface transition-colors">
+<span class="font-label-sm text-label-sm text-outline">Signals:</span>
+<span class="font-label-md text-label-md text-on-surface font-medium">All</span>
+<span class="material-symbols-outlined text-outline text-[16px]">expand_more</span>
+</button>
+</div>
+<!-- Sort Filter Dropdown -->
+<div class="relative">
+<button class="flex items-center gap-space-xs bg-surface-container hover:bg-surface-container-high px-space-md py-2 rounded-lg text-on-surface transition-colors">
+<span class="material-symbols-outlined text-outline text-[16px]">swap_vert</span>
+<span class="font-label-md text-label-md text-on-surface font-medium">Highest fit score</span>
+<span class="material-symbols-outlined text-outline text-[16px]">expand_more</span>
+</button>
+</div>
+<div class="h-6 w-px bg-surface-container-high hidden sm:block"></div>
+<!-- Secondary Action: Export CSV -->
+<button class="flex items-center gap-space-xs bg-surface-container hover:bg-surface-container-high active:bg-surface-container-highest px-space-md py-2 rounded-lg text-on-surface font-label-md text-label-md font-medium transition-colors shadow-sm" id="exportCsvBtn">
+<span class="material-symbols-outlined text-outline text-[16px]">file_download</span>
+<span>Export CSV</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Data Workspace: Split View Container (Table + Slide Drawer) -->
+<div class="relative flex w-full gap-space-md items-start">
+<!-- Attio / Linear Styled High-Polish Table Panel -->
+<div class="flex-1 w-full overflow-hidden rounded-xl bg-surface-container-lowest shadow-md transition-all">
+<div class="w-full overflow-x-auto">
+<table class="w-full border-collapse text-left" id="leadsTable">
+<thead>
+<tr class="bg-surface-container-low/80 text-outline uppercase font-label-sm text-label-sm tracking-wider">
+<th class="py-3 px-space-lg font-medium w-72" scope="col">Company</th>
+<th class="py-3 px-space-md font-medium w-48" scope="col">Location</th>
+<th class="py-3 px-space-md font-medium w-32" scope="col">Employees</th>
+<th class="py-3 px-space-md font-medium w-48" scope="col">
+<div class="flex items-center gap-1 cursor-pointer hover:text-on-surface transition-colors">
+<span>Fit Match</span>
+<span class="material-symbols-outlined text-[14px] text-primary">arrow_downward</span>
+</div>
+</th>
+<th class="py-3 px-space-md font-medium w-44" scope="col">Confidence</th>
+<th class="py-3 px-space-md font-medium" scope="col">Detected Signals</th>
+<th class="py-3 px-space-md font-medium text-right pr-space-lg w-24" scope="col">Actions</th>
+</tr>
+</thead>
+<tbody class="divide-y-0" id="leadsTableBody">
+<!-- ROW 1: SynthAI -->
+<tr class="lead-row group cursor-pointer hover:bg-surface-container-low transition-colors duration-150" data-company="SynthAI" data-conf="94" data-domain="synthai.com" data-emp="140" data-fit="92" data-loc="San Francisco, CA" data-signals="Hiring,Funding" data-summary="Pioneering synthetic behavioral inference engines for hyper-personalized SaaS outbound workflows.">
+<td class="py-space-md px-space-lg">
+<div class="flex items-center gap-space-md">
+<div class="w-9 h-9 rounded-lg bg-surface-container-high flex items-center justify-center text-primary font-code-sm text-code-sm font-semibold tracking-tighter shrink-0 shadow-sm">
+                    SY
+                  </div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface font-semibold group-hover:text-primary transition-colors truncate">SynthAI</span>
+<span class="font-code-sm text-code-sm text-outline truncate">synthai.com</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-1.5 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-outline text-[16px]">location_on</span>
+<span class="truncate">San Francisco, CA</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="font-code-sm text-code-sm text-on-surface-variant font-medium">140</span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-2">
+<div class="px-2 py-0.5 rounded-full bg-secondary/10 text-secondary font-code-sm text-code-sm font-semibold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>92</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate">Very strong match</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<div class="flex items-center justify-between text-on-surface font-code-sm text-code-sm mb-1">
+<span>94%</span>
+<span class="text-outline text-[10px]">High confidence</span>
+</div>
+<div class="w-24 h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-primary rounded-full" style="width: 94%"></div>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-wrap items-center gap-1.5">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-tertiary-container/20 text-tertiary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[12px]">trending_up</span> Hiring
+                  </span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary/15 text-secondary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[12px]">monetization_on</span> Funding
+                  </span>
+</div>
+</td>
+<td class="py-space-md px-space-md text-right pr-space-lg">
+<button class="open-drawer-btn w-8 h-8 rounded-lg bg-surface-container hover:bg-primary hover:text-on-primary text-outline-variant flex items-center justify-center transition-colors ml-auto" title="Inspect dossier">
+<span class="material-symbols-outlined text-[18px]">dock_to_left</span>
+</button>
+</td>
+</tr>
+<!-- ROW 2: VoxelCloud -->
+<tr class="lead-row group cursor-pointer hover:bg-surface-container-low transition-colors duration-150" data-company="VoxelCloud" data-conf="91" data-domain="voxelcloud.io" data-emp="85" data-fit="89" data-loc="Austin, TX" data-signals="Funding" data-summary="Distributed rendering networks utilizing edge GPU clusters for photorealistic metaverse streaming.">
+<td class="py-space-md px-space-lg">
+<div class="flex items-center gap-space-md">
+<div class="w-9 h-9 rounded-lg bg-surface-container-high flex items-center justify-center text-tertiary font-code-sm text-code-sm font-semibold tracking-tighter shrink-0 shadow-sm">
+                    VC
+                  </div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface font-semibold group-hover:text-primary transition-colors truncate">VoxelCloud</span>
+<span class="font-code-sm text-code-sm text-outline truncate">voxelcloud.io</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-1.5 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-outline text-[16px]">location_on</span>
+<span class="truncate">Austin, TX</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="font-code-sm text-code-sm text-on-surface-variant font-medium">85</span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-2">
+<div class="px-2 py-0.5 rounded-full bg-secondary/10 text-secondary font-code-sm text-code-sm font-semibold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>89</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate">Strong match</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<div class="flex items-center justify-between text-on-surface font-code-sm text-code-sm mb-1">
+<span>91%</span>
+<span class="text-outline text-[10px]">High confidence</span>
+</div>
+<div class="w-24 h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-primary rounded-full" style="width: 91%"></div>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-wrap items-center gap-1.5">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary/15 text-secondary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[12px]">monetization_on</span> Funding
+                  </span>
+</div>
+</td>
+<td class="py-space-md px-space-md text-right pr-space-lg">
+<button class="open-drawer-btn w-8 h-8 rounded-lg bg-surface-container hover:bg-primary hover:text-on-primary text-outline-variant flex items-center justify-center transition-colors ml-auto" title="Inspect dossier">
+<span class="material-symbols-outlined text-[18px]">dock_to_left</span>
+</button>
+</td>
+</tr>
+<!-- ROW 3: Krypton Data -->
+<tr class="lead-row group cursor-pointer hover:bg-surface-container-low transition-colors duration-150" data-company="Krypton Data" data-conf="93" data-domain="kryptondata.com" data-emp="310" data-fit="87" data-loc="New York, NY" data-signals="Hiring,Tech Match" data-summary="Enterprise cryptographic key management infrastructure tailored for decentralized finance audits.">
+<td class="py-space-md px-space-lg">
+<div class="flex items-center gap-space-md">
+<div class="w-9 h-9 rounded-lg bg-surface-container-high flex items-center justify-center text-primary-container font-code-sm text-code-sm font-semibold tracking-tighter shrink-0 shadow-sm">
+                    KD
+                  </div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface font-semibold group-hover:text-primary transition-colors truncate">Krypton Data</span>
+<span class="font-code-sm text-code-sm text-outline truncate">kryptondata.com</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-1.5 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-outline text-[16px]">location_on</span>
+<span class="truncate">New York, NY</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="font-code-sm text-code-sm text-on-surface-variant font-medium">310</span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-2">
+<div class="px-2 py-0.5 rounded-full bg-secondary/10 text-secondary font-code-sm text-code-sm font-semibold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>87</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate">Strong match</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<div class="flex items-center justify-between text-on-surface font-code-sm text-code-sm mb-1">
+<span>93%</span>
+<span class="text-outline text-[10px]">High confidence</span>
+</div>
+<div class="w-24 h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-primary rounded-full" style="width: 93%"></div>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-wrap items-center gap-1.5">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-tertiary-container/20 text-tertiary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[12px]">trending_up</span> Hiring
+                  </span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[12px]">code</span> Tech Match
+                  </span>
+</div>
+</td>
+<td class="py-space-md px-space-md text-right pr-space-lg">
+<button class="open-drawer-btn w-8 h-8 rounded-lg bg-surface-container hover:bg-primary hover:text-on-primary text-outline-variant flex items-center justify-center transition-colors ml-auto" title="Inspect dossier">
+<span class="material-symbols-outlined text-[18px]">dock_to_left</span>
+</button>
+</td>
+</tr>
+<!-- ROW 4: NeuraPulse -->
+<tr class="lead-row group cursor-pointer hover:bg-surface-container-low transition-colors duration-150" data-company="NeuraPulse" data-conf="88" data-domain="neuralpulse.co" data-emp="220" data-fit="84" data-loc="Seattle, WA" data-signals="Hiring" data-summary="Cognitive telemetry platform diagnosing edge IoT latency in high-stakes manufacturing plants.">
+<td class="py-space-md px-space-lg">
+<div class="flex items-center gap-space-md">
+<div class="w-9 h-9 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary-container font-code-sm text-code-sm font-semibold tracking-tighter shrink-0 shadow-sm">
+                    NP
+                  </div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface font-semibold group-hover:text-primary transition-colors truncate">NeuraPulse</span>
+<span class="font-code-sm text-code-sm text-outline truncate">neuralpulse.co</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-1.5 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-outline text-[16px]">location_on</span>
+<span class="truncate">Seattle, WA</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="font-code-sm text-code-sm text-on-surface-variant font-medium">220</span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-2">
+<div class="px-2 py-0.5 rounded-full bg-secondary/10 text-secondary font-code-sm text-code-sm font-semibold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>84</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate">Good match</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<div class="flex items-center justify-between text-on-surface font-code-sm text-code-sm mb-1">
+<span>88%</span>
+<span class="text-outline text-[10px]">Verified</span>
+</div>
+<div class="w-24 h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-primary/80 rounded-full" style="width: 88%"></div>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-wrap items-center gap-1.5">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-tertiary-container/20 text-tertiary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[12px]">trending_up</span> Hiring
+                  </span>
+</div>
+</td>
+<td class="py-space-md px-space-md text-right pr-space-lg">
+<button class="open-drawer-btn w-8 h-8 rounded-lg bg-surface-container hover:bg-primary hover:text-on-primary text-outline-variant flex items-center justify-center transition-colors ml-auto" title="Inspect dossier">
+<span class="material-symbols-outlined text-[18px]">dock_to_left</span>
+</button>
+</td>
+</tr>
+<!-- ROW 5: OmniScale -->
+<tr class="lead-row group cursor-pointer hover:bg-surface-container-low transition-colors duration-150" data-company="OmniScale" data-conf="85" data-domain="omniscale.dev" data-emp="195" data-fit="78" data-loc="San Francisco, CA" data-signals="Growth" data-summary="Automated multi-cloud workload provisioning engine reducing idle k8s cluster egress overhead.">
+<td class="py-space-md px-space-lg">
+<div class="flex items-center gap-space-md">
+<div class="w-9 h-9 rounded-lg bg-surface-container-high flex items-center justify-center text-primary font-code-sm text-code-sm font-semibold tracking-tighter shrink-0 shadow-sm">
+                    OS
+                  </div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface font-semibold group-hover:text-primary transition-colors truncate">OmniScale</span>
+<span class="font-code-sm text-code-sm text-outline truncate">omniscale.dev</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-1.5 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-outline text-[16px]">location_on</span>
+<span class="truncate">San Francisco, CA</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="font-code-sm text-code-sm text-on-surface-variant font-medium">195</span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-2">
+<div class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface font-code-sm text-code-sm font-semibold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span>
+<span>78</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline truncate">Moderate match</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<div class="flex items-center justify-between text-on-surface font-code-sm text-code-sm mb-1">
+<span>85%</span>
+<span class="text-outline text-[10px]">Verified</span>
+</div>
+<div class="w-24 h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-primary/70 rounded-full" style="width: 85%"></div>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-wrap items-center gap-1.5">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-primary-container/20 text-primary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[12px]">auto_graph</span> Growth
+                  </span>
+</div>
+</td>
+<td class="py-space-md px-space-md text-right pr-space-lg">
+<button class="open-drawer-btn w-8 h-8 rounded-lg bg-surface-container hover:bg-primary hover:text-on-primary text-outline-variant flex items-center justify-center transition-colors ml-auto" title="Inspect dossier">
+<span class="material-symbols-outlined text-[18px]">dock_to_left</span>
+</button>
+</td>
+</tr>
+<!-- ROW 6: TensorWorks -->
+<tr class="lead-row group cursor-pointer hover:bg-surface-container-low transition-colors duration-150" data-company="TensorWorks" data-conf="92" data-domain="tensorworks.ai" data-emp="95" data-fit="91" data-loc="Boston, MA" data-signals="Hiring,Funding" data-summary="Deep optimization primitives for LLM token throughput on sovereign bare-metal hardware.">
+<td class="py-space-md px-space-lg">
+<div class="flex items-center gap-space-md">
+<div class="w-9 h-9 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary font-code-sm text-code-sm font-semibold tracking-tighter shrink-0 shadow-sm">
+                    TW
+                  </div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface font-semibold group-hover:text-primary transition-colors truncate">TensorWorks</span>
+<span class="font-code-sm text-code-sm text-outline truncate">tensorworks.ai</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-1.5 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-outline text-[16px]">location_on</span>
+<span class="truncate">Boston, MA</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="font-code-sm text-code-sm text-on-surface-variant font-medium">95</span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-2">
+<div class="px-2 py-0.5 rounded-full bg-secondary/10 text-secondary font-code-sm text-code-sm font-semibold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>91</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate">Very strong match</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<div class="flex items-center justify-between text-on-surface font-code-sm text-code-sm mb-1">
+<span>92%</span>
+<span class="text-outline text-[10px]">High confidence</span>
+</div>
+<div class="w-24 h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-primary rounded-full" style="width: 92%"></div>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-wrap items-center gap-1.5">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-tertiary-container/20 text-tertiary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[12px]">trending_up</span> Hiring
+                  </span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary/15 text-secondary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[12px]">monetization_on</span> Funding
+                  </span>
+</div>
+</td>
+<td class="py-space-md px-space-md text-right pr-space-lg">
+<button class="open-drawer-btn w-8 h-8 rounded-lg bg-surface-container hover:bg-primary hover:text-on-primary text-outline-variant flex items-center justify-center transition-colors ml-auto" title="Inspect dossier">
+<span class="material-symbols-outlined text-[18px]">dock_to_left</span>
+</button>
+</td>
+</tr>
+<!-- ROW 7: CloudVector -->
+<tr class="lead-row group cursor-pointer hover:bg-surface-container-low transition-colors duration-150" data-company="CloudVector" data-conf="89" data-domain="cloudvector.net" data-emp="160" data-fit="86" data-loc="Denver, CO" data-signals="Tech Match" data-summary="Zero-trust vector embeddings storage enabling real-time enterprise semantic search compliance.">
+<td class="py-space-md px-space-lg">
+<div class="flex items-center gap-space-md">
+<div class="w-9 h-9 rounded-lg bg-surface-container-high flex items-center justify-center text-tertiary font-code-sm text-code-sm font-semibold tracking-tighter shrink-0 shadow-sm">
+                    CV
+                  </div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface font-semibold group-hover:text-primary transition-colors truncate">CloudVector</span>
+<span class="font-code-sm text-code-sm text-outline truncate">cloudvector.net</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-1.5 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-outline text-[16px]">location_on</span>
+<span class="truncate">Denver, CO</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="font-code-sm text-code-sm text-on-surface-variant font-medium">160</span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-2">
+<div class="px-2 py-0.5 rounded-full bg-secondary/10 text-secondary font-code-sm text-code-sm font-semibold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>86</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate">Strong match</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<div class="flex items-center justify-between text-on-surface font-code-sm text-code-sm mb-1">
+<span>89%</span>
+<span class="text-outline text-[10px]">High confidence</span>
+</div>
+<div class="w-24 h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-primary rounded-full" style="width: 89%"></div>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-wrap items-center gap-1.5">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[12px]">code</span> Tech Match
+                  </span>
+</div>
+</td>
+<td class="py-space-md px-space-md text-right pr-space-lg">
+<button class="open-drawer-btn w-8 h-8 rounded-lg bg-surface-container hover:bg-primary hover:text-on-primary text-outline-variant flex items-center justify-center transition-colors ml-auto" title="Inspect dossier">
+<span class="material-symbols-outlined text-[18px]">dock_to_left</span>
+</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Pagination & Operational Footer -->
+<div class="flex flex-col sm:flex-row items-center justify-between gap-space-sm px-space-lg py-space-md bg-surface-container-low/50">
+<span class="font-body-sm text-body-sm text-on-surface-variant" id="paginationStatus">
+          Showing <span class="font-medium text-on-surface">1–7</span> of <span class="font-medium text-on-surface">48</span> qualified leads
+        </span>
+<div class="flex items-center gap-space-xs">
+<button class="px-2.5 py-1 rounded bg-surface-container hover:bg-surface-container-high text-outline hover:text-on-surface font-label-sm text-label-sm disabled:opacity-40 transition-colors" disabled="">
+            Previous
+          </button>
+<div class="flex items-center gap-1 px-1">
+<span class="w-6 h-6 rounded bg-primary text-on-primary font-code-sm text-code-sm flex items-center justify-center font-medium">1</span>
+<span class="w-6 h-6 rounded hover:bg-surface-container text-on-surface-variant font-code-sm text-code-sm flex items-center justify-center cursor-pointer">2</span>
+<span class="w-6 h-6 rounded hover:bg-surface-container text-on-surface-variant font-code-sm text-code-sm flex items-center justify-center cursor-pointer">3</span>
+<span class="text-outline px-1">…</span>
+<span class="w-6 h-6 rounded hover:bg-surface-container text-on-surface-variant font-code-sm text-code-sm flex items-center justify-center cursor-pointer">7</span>
+</div>
+<button class="px-2.5 py-1 rounded bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm transition-colors">
+            Next
+          </button>
+</div>
+</div>
+</div>
+<!-- Linear/Attio Style Live Context Drawer Panel -->
+<div class="w-96 rounded-xl bg-surface-container-lowest p-space-lg shadow-xl shrink-0 hidden flex-col" id="inspectorDrawer">
+<div class="flex items-start justify-between pb-space-md border-b-0 mb-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center font-code-sm text-code-sm font-semibold text-primary" id="drawerLogo">
+            SY
+          </div>
+<div class="flex flex-col min-w-0">
+<h2 class="font-headline-md text-headline-md text-on-surface font-semibold truncate" id="drawerTitle">SynthAI</h2>
+<a class="font-code-sm text-code-sm text-primary hover:underline flex items-center gap-0.5" href="#" id="drawerDomain" target="_blank">
+<span>synthai.com</span>
+<span class="material-symbols-outlined text-[12px]">open_in_new</span>
+</a>
+</div>
+</div>
+<button class="w-7 h-7 rounded hover:bg-surface-container flex items-center justify-center text-outline hover:text-on-surface transition-colors" id="closeDrawerBtn">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<!-- Quick Action CTA -->
+<div class="flex gap-space-xs mb-space-lg">
+<button class="flex-1 py-1.5 px-space-sm rounded-lg bg-primary hover:bg-primary-fixed-dim text-on-primary font-label-md text-label-md font-semibold flex items-center justify-center gap-1 transition-colors">
+<span class="material-symbols-outlined text-[16px]">send</span>
+<span>Draft Outbound</span>
+</button>
+<button class="w-9 h-9 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-[16px]">bookmark_add</span>
+</button>
+</div>
+<!-- Dossier Summary Narrative -->
+<div class="p-space-md rounded-xl bg-surface-container-low mb-space-lg">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider block mb-1">Company Executive Summary</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed" id="drawerSummary">
+          Pioneering synthetic behavioral inference engines for hyper-personalized SaaS outbound workflows.
+        </p>
+</div>
+<!-- Metrics Mosaic -->
+<div class="grid grid-cols-2 gap-space-xs mb-space-lg">
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col">
+<span class="font-code-sm text-code-sm text-outline">Fit Quality</span>
+<div class="flex items-center gap-1.5 mt-0.5">
+<span class="font-headline-md text-headline-md text-secondary font-semibold" id="drawerFit">92</span>
+<span class="font-label-sm text-label-sm text-secondary">/ 100</span>
+</div>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col">
+<span class="font-code-sm text-code-sm text-outline">Model Confidence</span>
+<div class="flex items-center gap-1.5 mt-0.5">
+<span class="font-headline-md text-headline-md text-primary font-semibold" id="drawerConf">94%</span>
+</div>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col">
+<span class="font-code-sm text-code-sm text-outline">Headcount</span>
+<span class="font-body-md text-body-md text-on-surface font-medium mt-0.5" id="drawerHeadcount">140 employees</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col">
+<span class="font-code-sm text-code-sm text-outline">HQ Location</span>
+<span class="font-body-md text-body-md text-on-surface font-medium mt-0.5 truncate" id="drawerLocation">San Francisco, CA</span>
+</div>
+</div>
+<!-- Dynamic Visual: Lead Signal Graph Indicator -->
+<div class="rounded-xl bg-surface-container-low p-space-md">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Signals Detected</span>
+<span class="font-code-sm text-code-sm text-secondary">Active</span>
+</div>
+<div class="flex flex-wrap gap-1.5 mb-space-md" id="drawerSignals">
+<!-- Dynamic Pills -->
+</div>
+<div class="h-px bg-surface-container my-space-xs"></div>
+<!-- Inline Visual Affinity Sparkline -->
+<div class="mt-space-sm flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-code-sm text-code-sm text-outline">ICP Affinity Trajectory</span>
+<span class="font-label-sm text-label-sm text-secondary font-medium">+14.2% this quarter</span>
+</div>
+<svg class="w-24 h-8 overflow-visible" viewbox="0 0 100 30">
+<path class="text-secondary" d="M 0 25 Q 25 22 50 15 T 100 6" fill="none" stroke="currentColor" stroke-width="2.5"></path>
+<circle class="fill-secondary" cx="100" cy="6" r="3"></circle>
+</svg>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  (function initLeadExplorer() {
+    const tableBody = document.getElementById('leadsTableBody');
+    const searchInput = document.getElementById('leadSearchInput');
+    const rows = Array.from(document.querySelectorAll('.lead-row'));
+    const drawer = document.getElementById('inspectorDrawer');
+    const closeDrawerBtn = document.getElementById('closeDrawerBtn');
+
+    // Drawer Elements
+    const drawerTitle = document.getElementById('drawerTitle');
+    const drawerLogo = document.getElementById('drawerLogo');
+    const drawerDomain = document.getElementById('drawerDomain');
+    const drawerSummary = document.getElementById('drawerSummary');
+    const drawerFit = document.getElementById('drawerFit');
+    const drawerConf = document.getElementById('drawerConf');
+    const drawerHeadcount = document.getElementById('drawerHeadcount');
+    const drawerLocation = document.getElementById('drawerLocation');
+    const drawerSignals = document.getElementById('drawerSignals');
+
+    function populateDrawer(row) {
+      const name = row.getAttribute('data-company');
+      const domain = row.getAttribute('data-domain');
+      const loc = row.getAttribute('data-loc');
+      const emp = row.getAttribute('data-emp');
+      const fit = row.getAttribute('data-fit');
+      const conf = row.getAttribute('data-conf');
+      const summary = row.getAttribute('data-summary');
+      const signals = (row.getAttribute('data-signals') || '').split(',');
+
+      drawerTitle.textContent = name;
+      drawerLogo.textContent = name.substring(0, 2).toUpperCase();
+      drawerDomain.querySelector('span').textContent = domain;
+      drawerDomain.href = 'https://' + domain;
+      drawerSummary.textContent = summary;
+      drawerFit.textContent = fit;
+      drawerConf.textContent = conf + '%';
+      drawerHeadcount.textContent = emp + ' employees';
+      drawerLocation.textContent = loc;
+
+      drawerSignals.innerHTML = '';
+      signals.forEach(sig => {
+        if (!sig) return;
+        const badge = document.createElement('span');
+        badge.className = 'inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm';
+        badge.innerHTML = `<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> ${sig.trim()}`;
+        drawerSignals.appendChild(badge);
+      });
+
+      // Highlight current active row
+      rows.forEach(r => r.classList.remove('bg-surface-container-low/70', 'ring-1', 'ring-primary/40'));
+      row.classList.add('bg-surface-container-low/70');
+
+      drawer.classList.remove('hidden');
+      drawer.classList.add('flex');
+    }
+
+    // Row Click & Drawer open action
+    rows.forEach(row => {
+      row.addEventListener('click', (e) => {
+        populateDrawer(row);
+      });
+    });
+
+    closeDrawerBtn.addEventListener('click', () => {
+      drawer.classList.add('hidden');
+      drawer.classList.remove('flex');
+      rows.forEach(r => r.classList.remove('bg-surface-container-low/70'));
+    });
+
+    // Real-time client-side search filtering
+    searchInput.addEventListener('input', (e) => {
+      const query = e.target.value.toLowerCase().trim();
+      let visibleCount = 0;
+
+      rows.forEach(row => {
+        const textContent = row.textContent.toLowerCase();
+        const matches = textContent.includes(query);
+        if (matches) {
+          row.style.display = '';
+          visibleCount++;
+        } else {
+          row.style.display = 'none';
+        }
+      });
+
+      const paginationStatus = document.getElementById('paginationStatus');
+      if (paginationStatus) {
+        paginationStatus.innerHTML = `Showing <span class="font-medium text-on-surface">1–${visibleCount}</span> of <span class="font-medium text-on-surface">${visibleCount}</span> filtered leads`;
+      }
+    });
+
+    // Keyboard shortcut for Cmd+F focus
+    window.addEventListener('keydown', (e) => {
+      if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'f') {
+        e.preventDefault();
+        searchInput.focus();
+      }
+    });
+
+    // Simple toast feedback for Export CSV button
+    const exportBtn = document.getElementById('exportCsvBtn');
+    if (exportBtn) {
+      exportBtn.addEventListener('click', () => {
+        const originalText = exportBtn.innerHTML;
+        exportBtn.innerHTML = `<span class="material-symbols-outlined text-[16px] animate-spin">refresh</span> Generating...`;
+        setTimeout(() => {
+          exportBtn.innerHTML = `<span class="material-symbols-outlined text-secondary text-[16px]">check</span> CSV Ready`;
+          setTimeout(() => {
+            exportBtn.innerHTML = originalText;
+          }, 2000);
+        }, 800);
+      });
+    }
+
+    // Initialize first row in drawer for instant high-density inspection feel
+    if (window.innerWidth >= 1280 && rows.length > 0) {
+      populateDrawer(rows[0]);
+    }
+  })();
+</script></main></div></body></html>

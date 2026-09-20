@@ -1,18 +1,17 @@
 from fastapi import Depends, FastAPI, HTTPException
+from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from typing import List
 import os
 
 from dotenv import load_dotenv
-from requests import Session
+from sqlalchemy.orm import Session
 
 from backend.agents.discovery import discover_leads
 from backend.agents.enrichment import enrich_lead
 from backend.agents.scoring import score_lead
 from backend.agents.deduplication import deduplicate_leads
 from backend.database.database import engine, Base, get_db
-from backend.database import models
-from backend.database.database import engine, Base
 from backend.database import models
 
 
@@ -36,6 +35,20 @@ app = FastAPI(
     description="AI-powered lead discovery, enrichment and qualification system",
     version="1.0.0"
 )
+
+origins = [
+    "http://localhost:5173",
+    "http://localhost:3000",
+]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
 Base.metadata.create_all(bind=engine)
 
 
@@ -126,10 +139,24 @@ def run_pipeline(icp: ICPRequest, db: Session = Depends(get_db)):
 
         db.add(db_lead)
 
+    db_run = models.Run(
+        status="completed",
+        icp=icp_data,
+        leads=unique_leads,
+        events=[
+            {"step": "discovery", "count": len(leads), "status": "success"},
+            {"step": "enrichment", "count": len(enriched_leads), "status": "success"},
+            {"step": "scoring", "count": len(scored_leads), "status": "success"},
+            {"step": "deduplication", "count": len(unique_leads), "status": "success"},
+        ]
+    )
+    db.add(db_run)
     db.commit()
+    db.refresh(db_run)
 
     return {
         "message": "Lead generation pipeline completed successfully",
+        "run_id": db_run.id,
         "total_discovered": len(leads),
         "total_unique": len(unique_leads),
         "leads": unique_leads

@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&amp;family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"surface-tint":"#c0c1ff","inverse-surface":"#dfe2ee","on-surface-variant":"#c7c4d7","outline":"#908fa0","error":"#ffb4ab","on-primary-fixed":"#07006c","surface-container-high":"#262a33","tertiary-fixed":"#6ffbbe","surface-container":"#1c2028","on-primary-container":"#0d0096","surface-container-low":"#181c24","error-container":"#93000a","inverse-primary":"#494bd6","surface-dim":"#0f131c","on-surface":"#dfe2ee","secondary-fixed":"#acedff","tertiary-fixed-dim":"#4edea3","on-tertiary":"#003824","on-secondary":"#003640","surface-container-highest":"#31353e","on-background":"#dfe2ee","tertiary-container":"#00885d","on-error-container":"#ffdad6","outline-variant":"#464554","on-primary":"#1000a9","inverse-on-surface":"#2c3039","on-secondary-container":"#00424e","primary-fixed-dim":"#c0c1ff","on-tertiary-fixed":"#002113","on-primary-fixed-variant":"#2f2ebe","secondary-fixed-dim":"#4cd7f6","on-tertiary-fixed-variant":"#005236","primary":"#c0c1ff","on-error":"#690005","surface-bright":"#353942","secondary":"#4cd7f6","tertiary":"#4edea3","on-secondary-fixed-variant":"#004e5c","surface":"#0f131c","on-secondary-fixed":"#001f26","secondary-container":"#03b5d3","surface-container-lowest":"#0a0e16","background":"#0f131c","primary-fixed":"#e1e0ff","surface-variant":"#31353e","primary-container":"#8083ff","on-tertiary-container":"#000703"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"margin":"1rem","space-lg":"1.25rem","gutter":"0.75rem","gutter-md":"1rem","margin-md":"1.5rem","space-sm":"0.5rem","space-md":"0.75rem","space-xs":"0.25rem","space-xl":"1.75rem"},"fontFamily":{"headline-md":["Geist"],"body-default":["Inter"],"mono-default":["JetBrains Mono"],"mono-sm":["JetBrains Mono"],"label-caps":["Inter"],"display":["Geist"],"mono-lg":["JetBrains Mono"],"headline-lg":["Geist"],"headline-sm":["Geist"],"body-lg":["Inter"],"display-mobile":["Geist"],"body-sm":["Inter"]},"fontSize":{"headline-md":["20px",{"lineHeight":"28px","letterSpacing":"-0.015em","fontWeight":"600"}],"body-default":["13px",{"lineHeight":"20px","letterSpacing":"0em","fontWeight":"400"}],"mono-default":["12px",{"lineHeight":"16px","letterSpacing":"-0.01em","fontWeight":"500"}],"mono-sm":["11px",{"lineHeight":"14px","letterSpacing":"0em","fontWeight":"400"}],"label-caps":["11px",{"lineHeight":"16px","letterSpacing":"0.04em","fontWeight":"600"}],"display":["36px",{"lineHeight":"44px","letterSpacing":"-0.025em","fontWeight":"600"}],"mono-lg":["14px",{"lineHeight":"20px","letterSpacing":"-0.01em","fontWeight":"500"}],"headline-lg":["24px",{"lineHeight":"32px","letterSpacing":"-0.02em","fontWeight":"600"}],"headline-sm":["16px",{"lineHeight":"24px","letterSpacing":"-0.01em","fontWeight":"500"}],"body-lg":["15px",{"lineHeight":"24px","letterSpacing":"-0.005em","fontWeight":"400"}],"display-mobile":["28px",{"lineHeight":"36px","letterSpacing":"-0.02em","fontWeight":"600"}],"body-sm":["12px",{"lineHeight":"16px","letterSpacing":"0.005em","fontWeight":"400"}]}}}}</script></head><body class="bg-surface font-body-default text-body-default text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-low z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.2)]"><div class="flex flex-col"><div class="p-space-md flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="Apex Intel Geometric Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XQ_Mohev1zEBFUANt9IdO8z7zC3PrcNQTYm5ik532dvsdXZKPMt48khdU7gwQQ0Vg1HOlRmuhXXb7wjeQITFYO2nrrytSo5Xaw7LE2rRpwfJhPtZ3MiPUnibFeqT53uFxHG-5HYCupbisfoiJVSvnPYiHeNUw59J9NPmwJSKCB3GFSpQNEvew3UOlxmcbPx0wlsKmeA4iHNihBkUCBYl42f-ysi-Mn8XIVOf3GCKdqGw"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight leading-none">Apex Intel</span><span class="font-mono-sm text-mono-sm text-outline tracking-wider">v2.4.0_CORE</span></div></div><button class="p-space-xs text-on-surface-variant hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[18px]">dock_to_right</span></button></div><div class="px-space-md py-space-xs"><div class="bg-surface-container p-space-sm rounded-lg flex items-center justify-between cursor-pointer hover:bg-surface-container-high transition-colors"><div class="flex items-center gap-space-sm min-w-0"><span class="w-2 h-2 rounded-full bg-secondary shadow-[0_0_8px_rgba(76,215,246,0.6)] flex-shrink-0"></span><div class="truncate"><div class="font-body-sm text-body-sm text-on-surface font-medium truncate">Acme AI Expansion</div><div class="font-mono-sm text-mono-sm text-outline truncate">Prod Target Workspace</div></div></div><span class="material-symbols-outlined text-outline text-[16px]">unfold_more</span></div></div><div class="px-space-md pt-space-md pb-space-xs"><span class="font-label-caps text-label-caps uppercase text-outline tracking-wider">Orchestration</span></div><nav class="flex flex-col gap-space-xs px-space-sm" data-active-classes="bg-surface-container-high text-on-surface font-medium"><a class="flex items-center gap-space-md px-space-md py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[18px]">analytics</span><span class="font-body-default text-body-default">Dashboard</span></a><a class="flex items-center gap-space-md px-space-md py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="icp-builder" href="#"><span class="material-symbols-outlined text-[18px]">architecture</span><span class="font-body-default text-body-default">ICP Builder</span></a><a aria-current="page" class="flex items-center justify-between px-space-md py-space-xs rounded-lg transition-colors bg-surface-container-high text-on-surface font-medium" data-path="research-runs" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[18px]">smart_toy</span><span class="font-body-default text-body-default">Research Runs</span></div><span class="font-mono-sm text-mono-sm px-1.5 py-0.5 rounded bg-surface-container-highest text-secondary">24</span></a><a class="flex items-center gap-space-md px-space-md py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="lead-explorer" href="#"><span class="material-symbols-outlined text-[18px]">table_chart</span><span class="font-body-default text-body-default">Lead Explorer</span></a><a class="flex items-center gap-space-md px-space-md py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="lead-detail" href="#"><span class="material-symbols-outlined text-[18px]">pageview</span><span class="font-body-default text-body-default">Lead Detail</span></a><a class="flex items-center justify-between px-space-md py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="duplicate-review" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[18px]">difference</span><span class="font-body-default text-body-default">Duplicate Review</span></div><span class="font-mono-sm text-mono-sm px-1.5 py-0.5 rounded bg-surface-container-highest text-tertiary">12</span></a></nav><div class="px-space-md pt-space-md pb-space-xs"><span class="font-label-caps text-label-caps uppercase text-outline tracking-wider">Telemetry &amp; Ops</span></div><nav class="flex flex-col gap-space-xs px-space-sm" data-active-classes="bg-surface-container-high text-on-surface font-medium"><a class="flex items-center gap-space-md px-space-md py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="run-audit" href="#"><span class="material-symbols-outlined text-[18px]">terminal</span><span class="font-body-default text-body-default">Run Audit</span></a><a class="flex items-center gap-space-md px-space-md py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="export-center" href="#"><span class="material-symbols-outlined text-[18px]">sync_alt</span><span class="font-body-default text-body-default">Export Center</span></a><a class="flex items-center gap-space-md px-space-md py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="compliance-and-safety" href="#"><span class="material-symbols-outlined text-[18px]">verified_user</span><span class="font-body-default text-body-default">Compliance &amp; Safety</span></a><a class="flex items-center gap-space-md px-space-md py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="settings" href="#"><span class="material-symbols-outlined text-[18px]">settings</span><span class="font-body-default text-body-default">Settings</span></a></nav></div><div class="p-space-md flex flex-col gap-space-sm bg-surface-container-lowest/60"><div class="p-space-sm rounded-lg bg-surface-container flex flex-col gap-space-xs"><div class="flex items-center justify-between"><span class="font-mono-sm text-mono-sm text-on-surface font-medium">Agents Online</span><span class="flex items-center gap-1.5 font-mono-sm text-mono-sm text-secondary"><span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span>5/5 active</span></div><div class="flex items-center gap-1 font-mono-sm text-mono-sm text-outline"><span class="material-symbols-outlined text-[14px] text-tertiary">format_image_left</span><span>100% Public Data / Robots</span></div></div><div class="flex items-center justify-between pt-space-xs"><div class="flex items-center gap-space-sm min-w-0"><div class="w-7 h-7 rounded-full bg-surface-container-high flex items-center justify-center text-primary font-mono-sm font-semibold flex-shrink-0">DV</div><div class="truncate"><div class="font-body-sm text-body-sm text-on-surface font-medium truncate">David Vance</div><div class="font-mono-sm text-mono-sm text-outline truncate">Head of GTM</div></div></div><button class="p-space-xs text-on-surface-variant hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[18px]">more_vert</span></button></div></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface/85 backdrop-blur-xl z-40 shadow-[0_1px_8px_rgba(0,0,0,0.2)] flex items-center justify-between px-space-lg"><div class="flex items-center gap-space-md min-w-0"><nav class="hidden xl:flex items-center gap-space-xs text-on-surface-variant font-mono-sm text-mono-sm flex-shrink-0"><span class="hover:text-on-surface transition-colors cursor-pointer">Apex Intel</span><span class="text-outline">/</span><span class="hover:text-on-surface transition-colors cursor-pointer">Research Workspace</span><span class="text-outline">/</span><span class="text-on-surface font-medium">Active Run</span></nav><div class="flex items-center gap-2 px-2.5 py-1 rounded-full bg-surface-container-high"><span class="relative flex h-2 w-2"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-tertiary opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-tertiary"></span></span><span class="font-mono-sm text-mono-sm text-on-surface truncate">Run #0024</span><span class="text-outline font-mono-sm text-mono-sm">•</span><span class="font-mono-sm text-mono-sm text-secondary truncate hidden sm:inline">Autonomous Pipeline</span><span class="text-outline font-mono-sm text-mono-sm hidden sm:inline">•</span><span class="font-mono-sm text-mono-sm text-tertiary font-semibold">94.2% Fit</span></div></div><div class="flex-1 max-w-lg mx-space-md"><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-3 text-outline text-[18px]">search</span><input class="w-full pl-9 pr-14 py-1.5 bg-surface-container text-on-surface font-body-default text-body-default rounded-lg placeholder:text-outline focus:outline-none focus:bg-surface-container-high transition-all" placeholder="Search accounts, signals, evidence, runs..." type="text"/><div class="absolute right-2 flex items-center"><kbd class="px-1.5 py-0.5 rounded bg-surface-container-highest text-outline font-mono-sm text-mono-sm">⌘K</kbd></div></div></div><div class="flex items-center gap-space-md flex-shrink-0"><div class="hidden lg:flex items-center gap-1.5 px-2 py-1 rounded bg-surface-container text-outline font-mono-sm text-mono-sm"><span class="material-symbols-outlined text-[14px] text-tertiary">gavel</span><span>Robots.txt Enforced</span></div><button class="relative p-space-xs rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1 right-1 w-2 h-2 rounded-full bg-secondary ring-2 ring-surface"></span></button><div class="flex items-center gap-space-sm pl-space-xs cursor-pointer"><div class="hidden md:flex flex-col text-right"><span class="font-body-sm text-body-sm text-on-surface font-medium leading-none">Enterprise GTM Alpha</span><span class="font-mono-sm text-mono-sm text-outline">ID: ws_0989</span></div><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDhcnJnw-EkWEH_3Zp15uptpWKwaPKO915zfGJWrK4M-4Z4lGFXGrECTV9Icgu4nATJscGlw4Ok3AG9Ak7tRb3yC8gIMNhTSJuJ16iy5NH_1ZQ1vwLg_ahJTPsSG257yej-eFqSUlLWjQtJ4UhwBBQnhBYmt24VyvG3PFrJUyOrvpqvlFl_nYQzlhj26P-F-gbu6yv86RG6x-RdNIYLJFDqy0Eb38Ei3Pi2BIQbAfgd"/></div></div></header><main class="w-full pt-16 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- Subtle ambient top gradient -->
+<div class="relative w-full overflow-hidden px-space-lg py-space-md flex flex-col gap-space-lg">
+<div class="pointer-events-none absolute -top-24 left-1/3 w-96 h-96 rounded-full bg-secondary/5 blur-[120px]"></div>
+<div class="pointer-events-none absolute top-40 right-1/4 w-80 h-80 rounded-full bg-primary/5 blur-[100px]"></div>
+<!-- Screen Header & High-Precision Telemetry Bar -->
+<section class="flex flex-col gap-space-md">
+<div class="flex flex-col xl:flex-row xl:items-center justify-between gap-space-md">
+<div class="flex flex-col gap-1 min-w-0">
+<div class="flex flex-wrap items-center gap-space-sm">
+<span class="font-mono-lg text-mono-lg text-on-surface font-semibold tracking-tight">Research Run #0024</span>
+<div class="flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-surface-container-high shadow-sm">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-80"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-secondary"></span>
+</span>
+<span class="font-mono-sm text-mono-sm text-secondary font-medium tracking-wide uppercase">Autonomous Research Active</span>
+</div>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-tertiary font-mono-sm text-mono-sm">Agent Mesh v2.4</span>
+</div>
+<p class="font-body-default text-body-default text-on-surface-variant truncate">
+            Target: B2B SaaS 50–500 FTEs <span class="text-outline mx-1">•</span> US East &amp; West <span class="text-outline mx-1">•</span> AI / Python / AWS Stack
+          </p>
+</div>
+<!-- Run Control Actions -->
+<div class="flex items-center gap-space-sm flex-shrink-0">
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface transition-all shadow-sm" id="pauseBtn" onclick="togglePauseState()">
+<span class="material-symbols-outlined text-[16px] text-secondary">pause</span>
+<span class="font-mono-sm text-mono-sm">Pause Run</span>
+</button>
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-high hover:bg-error-container hover:text-on-error-container text-outline hover:text-error transition-all shadow-sm" onclick="confirmAbort()">
+<span class="material-symbols-outlined text-[16px]">stop_circle</span>
+<span class="font-mono-sm text-mono-sm">Abort</span>
+</button>
+<a class="flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg bg-primary text-on-primary hover:bg-primary-fixed-dim transition-all shadow-md" href="#">
+<span class="material-symbols-outlined text-[16px]">tune</span>
+<span class="font-mono-sm text-mono-sm font-semibold">Adjust Rules</span>
+</a>
+</div>
+</div>
+<!-- Telemetry Strip -->
+<div class="grid grid-cols-2 md:grid-cols-4 xl:grid-cols-5 gap-space-xs p-space-xs rounded-xl bg-surface-container-low shadow-sm">
+<div class="p-space-sm rounded-lg bg-surface-container flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps uppercase text-outline">Elapsed Time</span>
+<span class="font-mono-lg text-mono-lg text-on-surface font-semibold" id="elapsedCounter">04m 32s</span>
+</div>
+<span class="material-symbols-outlined text-outline text-[20px]">timer</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps uppercase text-outline">Network Calls</span>
+<span class="font-mono-lg text-mono-lg text-secondary font-semibold">1,842</span>
+</div>
+<span class="material-symbols-outlined text-secondary text-[20px]">lan</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps uppercase text-outline">Safety Policy</span>
+<span class="font-mono-sm text-mono-sm text-tertiary font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">gavel</span> 100% Robots.txt
+            </span>
+</div>
+<span class="material-symbols-outlined text-tertiary text-[20px]">verified_user</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps uppercase text-outline">Est. Completion</span>
+<span class="font-mono-lg text-mono-lg text-on-surface font-semibold">01m 45s</span>
+</div>
+<span class="material-symbols-outlined text-outline text-[20px]">hourglass_top</span>
+</div>
+<div class="col-span-2 md:col-span-4 xl:col-span-1 p-space-sm rounded-lg bg-surface-container-high flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps uppercase text-outline">Compute Mesh Load</span>
+<div class="flex items-center gap-2 mt-0.5">
+<div class="w-20 h-1.5 rounded-full bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 78%"></div>
+</div>
+<span class="font-mono-sm text-mono-sm text-secondary font-semibold">78%</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-secondary text-[20px]">memory</span>
+</div>
+</div>
+</section>
+<!-- Large Multi-Agent Pipeline Visualization -->
+<section class="flex flex-col gap-space-xs rounded-xl bg-surface-container p-space-md shadow-md">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-space-sm">
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-outline">Deterministic Agent Pipeline</span>
+<span class="w-1 h-1 rounded-full bg-outline"></span>
+<span class="font-mono-sm text-mono-sm text-secondary">5 Nodes Synchronized</span>
+</div>
+<div class="flex items-center gap-space-md text-mono-sm font-mono-sm">
+<span class="flex items-center gap-1.5 text-tertiary"><span class="w-2 h-2 rounded-full bg-tertiary"></span> Completed</span>
+<span class="flex items-center gap-1.5 text-secondary"><span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span> Processing</span>
+<span class="flex items-center gap-1.5 text-outline"><span class="w-2 h-2 rounded-full bg-outline-variant"></span> Queued</span>
+</div>
+</div>
+<!-- Pipeline Track Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-5 gap-space-sm relative">
+<!-- Stage 1: Discovery -->
+<div class="relative rounded-lg bg-surface-container-low p-space-md flex flex-col justify-between gap-space-md shadow-sm transition-all hover:bg-surface-container-high">
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-mono-sm text-mono-sm text-outline">STAGE 01</span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-tertiary/10 text-tertiary font-mono-sm text-mono-sm">
+<span class="material-symbols-outlined text-[13px]">check_circle</span> Complete
+              </span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Discovery</h2>
+<span class="font-mono-sm text-mono-sm text-outline truncate">Discovery Agent v2.4</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="flex justify-between items-baseline font-mono-sm text-mono-sm">
+<span class="text-on-surface font-semibold">1,428 discovered</span>
+<span class="text-outline">42s</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-tertiary rounded-full w-full"></div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs text-outline font-mono-sm text-mono-sm">
+<span>Crunchbase / GitHub</span>
+<span class="text-tertiary font-medium">100%</span>
+</div>
+</div>
+<!-- Stage 2: Enrichment -->
+<div class="relative rounded-lg bg-surface-container-low p-space-md flex flex-col justify-between gap-space-md shadow-sm transition-all hover:bg-surface-container-high">
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-mono-sm text-mono-sm text-outline">STAGE 02</span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-tertiary/10 text-tertiary font-mono-sm text-mono-sm">
+<span class="material-symbols-outlined text-[13px]">check_circle</span> Complete
+              </span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Enrichment</h2>
+<span class="font-mono-sm text-mono-sm text-outline truncate">Public Web &amp; Tech Signal</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="flex justify-between items-baseline font-mono-sm text-mono-sm">
+<span class="text-on-surface font-semibold">1,428 enriched</span>
+<span class="text-outline">1m 55s</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-tertiary rounded-full w-full"></div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs text-outline font-mono-sm text-mono-sm">
+<span>9,840 signals mapped</span>
+<span class="text-tertiary font-medium">100%</span>
+</div>
+</div>
+<!-- Stage 3: Qualification (Active) -->
+<div class="relative rounded-lg bg-surface-container-high p-space-md flex flex-col justify-between gap-space-md shadow-md">
+<div class="absolute -top-1 -right-1 w-2.5 h-2.5 rounded-full bg-secondary animate-ping"></div>
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-mono-sm text-mono-sm text-secondary">STAGE 03</span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary/15 text-secondary font-mono-sm text-mono-sm">
+<span class="material-symbols-outlined text-[13px] animate-spin">sync</span> Active 82%
+              </span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Qualification</h2>
+<span class="font-mono-sm text-mono-sm text-outline truncate">ICP Deterministic Evaluator</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="flex justify-between items-baseline font-mono-sm text-mono-sm">
+<span class="text-on-surface font-semibold">1,172 / 1,428 eval</span>
+<span class="text-tertiary font-medium">482 qualified</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 82%"></div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs text-outline font-mono-sm text-mono-sm">
+<span class="truncate">Rule Engine: Pass 41.1%</span>
+<span class="text-secondary font-medium">82%</span>
+</div>
+</div>
+<!-- Stage 4: Scoring (Active) -->
+<div class="relative rounded-lg bg-surface-container-high p-space-md flex flex-col justify-between gap-space-md shadow-md">
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-mono-sm text-mono-sm text-secondary">STAGE 04</span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary/15 text-secondary font-mono-sm text-mono-sm">
+<span class="material-symbols-outlined text-[13px] animate-spin">rotate_right</span> Active 65%
+              </span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Scoring</h2>
+<span class="font-mono-sm text-mono-sm text-outline truncate">Deterministic Fit Engine</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="flex justify-between items-baseline font-mono-sm text-mono-sm">
+<span class="text-on-surface font-semibold">920 scored</span>
+<span class="text-secondary font-medium">Avg 88.4</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-primary rounded-full" style="width: 65%"></div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs text-outline font-mono-sm text-mono-sm">
+<span>Tier Weights Applied</span>
+<span class="text-primary font-medium">65%</span>
+</div>
+</div>
+<!-- Stage 5: Deduplication (Queued) -->
+<div class="relative rounded-lg bg-surface-container-low p-space-md flex flex-col justify-between gap-space-md opacity-85 shadow-sm hover:opacity-100 transition-all">
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-mono-sm text-mono-sm text-outline">STAGE 05</span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container-highest text-outline font-mono-sm text-mono-sm">
+<span class="material-symbols-outlined text-[13px]">pending</span> Initializing
+              </span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Deduplication</h2>
+<span class="font-mono-sm text-mono-sm text-outline truncate">Entity Resolution Engine</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="flex justify-between items-baseline font-mono-sm text-mono-sm">
+<span class="text-on-surface">12 clusters pending</span>
+<span class="text-outline">Queue</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-outline rounded-full" style="width: 15%"></div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs text-outline font-mono-sm text-mono-sm">
+<span>Levenshtein + Domain</span>
+<span class="text-outline font-medium">15%</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Split Screen: Telemetry Feed & Live Distribution Metrics -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-md items-start">
+<!-- Left Sub-panel: Agent Activity Stream (Audit Feed) -->
+<section class="xl:col-span-7 flex flex-col rounded-xl bg-surface-container-low shadow-md overflow-hidden">
+<div class="p-space-md bg-surface-container flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[18px]">terminal</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Agent Activity Stream (Live Audit Feed)</h3>
+</div>
+<div class="flex items-center gap-2">
+<span class="inline-flex items-center gap-1 font-mono-sm text-mono-sm text-tertiary">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary animate-pulse"></span> STREAMING
+            </span>
+<button class="p-1 text-outline hover:text-on-surface rounded bg-surface-container-high transition-colors" onclick="clearConsoleLog()" title="Clear View">
+<span class="material-symbols-outlined text-[14px]">refresh</span>
+</button>
+</div>
+</div>
+<!-- Terminal Output Container -->
+<div class="p-space-md flex flex-col gap-2.5 font-mono-sm text-mono-sm max-h-[420px] overflow-y-auto" id="telemetryFeed">
+<div class="p-space-xs rounded bg-surface-container/60 hover:bg-surface-container flex items-start gap-space-sm transition-colors">
+<span class="text-outline flex-shrink-0">[14:28:44]</span>
+<span class="text-secondary font-semibold flex-shrink-0">DISCOVERY:</span>
+<span class="text-on-surface">Found 24 new accounts via Crunchbase &amp; GitHub open telemetry repository queries.</span>
+</div>
+<div class="p-space-xs rounded bg-surface-container/60 hover:bg-surface-container flex items-start gap-space-sm transition-colors">
+<span class="text-outline flex-shrink-0">[14:28:49]</span>
+<span class="text-tertiary font-semibold flex-shrink-0">SAFETY:</span>
+<span class="text-on-surface">Robots.txt compliance verified for 21 target domains (3 restricted domains autonomously bypassed).</span>
+</div>
+<div class="p-space-xs rounded bg-surface-container/60 hover:bg-surface-container flex items-start gap-space-sm transition-colors">
+<span class="text-outline flex-shrink-0">[14:29:02]</span>
+<span class="text-primary font-semibold flex-shrink-0">ENRICH:</span>
+<span class="text-on-surface">Extracted tech stack signals (<span class="text-secondary">AWS, PyTorch, Kubernetes, FastAPI</span>) for entity <span class="text-primary font-medium">'Synthetix AI'</span>.</span>
+</div>
+<div class="p-space-xs rounded bg-surface-container/60 hover:bg-surface-container flex items-start gap-space-sm transition-colors">
+<span class="text-outline flex-shrink-0">[14:29:15]</span>
+<span class="text-secondary font-semibold flex-shrink-0">QUALIFY:</span>
+<span class="text-on-surface">Evaluated batch of 18 accounts against ICP rule matrix: <span class="text-tertiary">14 Qualified</span>, <span class="text-error">4 Excluded</span> (Out of FTE range).</span>
+</div>
+<div class="p-space-xs rounded bg-surface-container/60 hover:bg-surface-container flex items-start gap-space-sm transition-colors">
+<span class="text-outline flex-shrink-0">[14:29:31]</span>
+<span class="text-tertiary font-semibold flex-shrink-0">SCORING:</span>
+<span class="text-on-surface">Completed deterministic fit scoring: <span class="px-1.5 py-0.5 rounded bg-tertiary/15 text-tertiary font-bold">94/100</span> (+25 industry, +20 geo, +20 size, +15 tech, +14 signals).</span>
+</div>
+<div class="p-space-xs rounded bg-surface-container/60 hover:bg-surface-container flex items-start gap-space-sm transition-colors">
+<span class="text-outline flex-shrink-0">[14:29:40]</span>
+<span class="text-primary font-semibold flex-shrink-0">DEDUP:</span>
+<span class="text-on-surface">Resolved 3 duplicate entity records (canonical parent merged into <span class="text-on-surface font-medium">'ApexAI Inc'</span> via corporate domain signature).</span>
+</div>
+<!-- Dynamic live item injected continuously -->
+<div class="p-space-xs rounded bg-secondary/10 flex items-start gap-space-sm transition-all" id="liveStreamItem">
+<span class="text-secondary flex-shrink-0">[14:29:54]</span>
+<span class="text-secondary font-semibold flex-shrink-0">EVAL:</span>
+<span class="text-on-surface">Analyzing security audit telemetry for <span class="text-secondary">'NeuralFlow Systems'</span> — 12 verified engineering leads identified.</span>
+</div>
+</div>
+<div class="p-space-sm bg-surface-container flex items-center justify-between text-outline font-mono-sm text-mono-sm">
+<div class="flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>Audit Trail: Immutable cryptographic log</span>
+</div>
+<span class="text-on-surface-variant">Hash: 8f72a4...c01e</span>
+</div>
+</section>
+<!-- Right Sub-panel: Live Discovery Metrics & Distribution -->
+<section class="xl:col-span-5 flex flex-col gap-space-md">
+<!-- Score Distribution Card -->
+<div class="rounded-xl bg-surface-container-low p-space-md flex flex-col gap-space-md shadow-md">
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps uppercase text-outline">Deterministic Fit</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Score Distribution</h3>
+</div>
+<div class="text-right font-mono-sm text-mono-sm">
+<span class="text-secondary font-semibold">920 Records</span>
+<span class="block text-outline">Mean: 88.4 / 100</span>
+</div>
+</div>
+<!-- Distribution Visual Histogram Bars -->
+<div class="flex flex-col gap-space-xs font-mono-sm text-mono-sm">
+<!-- Tier A: 90-100 -->
+<div class="flex items-center gap-space-sm">
+<span class="w-20 text-tertiary font-medium">90–100</span>
+<div class="flex-1 h-5 rounded bg-surface-container overflow-hidden relative">
+<div class="h-full bg-tertiary rounded flex items-center justify-end pr-2 transition-all duration-700" style="width: 42%">
+<span class="text-[10px] text-on-tertiary font-bold">42%</span>
+</div>
+</div>
+<span class="w-10 text-right text-on-surface">386</span>
+</div>
+<!-- Tier B: 80-89 -->
+<div class="flex items-center gap-space-sm">
+<span class="w-20 text-secondary font-medium">80–89</span>
+<div class="flex-1 h-5 rounded bg-surface-container overflow-hidden relative">
+<div class="h-full bg-secondary rounded flex items-center justify-end pr-2 transition-all duration-700" style="width: 38%">
+<span class="text-[10px] text-on-secondary font-bold">38%</span>
+</div>
+</div>
+<span class="w-10 text-right text-on-surface">350</span>
+</div>
+<!-- Tier C: 70-79 -->
+<div class="flex items-center gap-space-sm">
+<span class="w-20 text-primary font-medium">70–79</span>
+<div class="flex-1 h-5 rounded bg-surface-container overflow-hidden relative">
+<div class="h-full bg-primary rounded flex items-center justify-end pr-2 transition-all duration-700" style="width: 15%">
+<span class="text-[10px] text-on-primary font-bold">15%</span>
+</div>
+</div>
+<span class="w-10 text-right text-on-surface">138</span>
+</div>
+<!-- Sub 70 -->
+<div class="flex items-center gap-space-sm">
+<span class="w-20 text-outline font-medium">&lt; 70</span>
+<div class="flex-1 h-5 rounded bg-surface-container overflow-hidden relative">
+<div class="h-full bg-outline-variant rounded flex items-center justify-end pr-1.5 transition-all duration-700" style="width: 5%">
+<span class="text-[10px] text-on-surface font-semibold">5%</span>
+</div>
+</div>
+<span class="w-10 text-right text-outline">46</span>
+</div>
+</div>
+<!-- Inline Visual Summary Metrics -->
+<div class="grid grid-cols-3 gap-space-xs pt-space-xs">
+<div class="p-space-sm rounded bg-surface-container flex flex-col">
+<span class="font-label-caps text-label-caps text-outline">Tier 1 Target</span>
+<span class="font-mono-lg text-mono-lg text-tertiary font-bold mt-1">386</span>
+<span class="font-mono-sm text-mono-sm text-outline">Immediate CRM sync</span>
+</div>
+<div class="p-space-sm rounded bg-surface-container flex flex-col">
+<span class="font-label-caps text-label-caps text-outline">Warm Signal</span>
+<span class="font-mono-lg text-mono-lg text-secondary font-bold mt-1">350</span>
+<span class="font-mono-sm text-mono-sm text-outline">Secondary review</span>
+</div>
+<div class="p-space-sm rounded bg-surface-container flex flex-col">
+<span class="font-label-caps text-label-caps text-outline">Pruned</span>
+<span class="font-mono-lg text-mono-lg text-error font-bold mt-1">184</span>
+<span class="font-mono-sm text-mono-sm text-outline">Deterministic fail</span>
+</div>
+</div>
+</div>
+<!-- Real-Time Signal Breakdown Matrix -->
+<div class="rounded-xl bg-surface-container-low p-space-md flex flex-col gap-space-md shadow-md">
+<div class="flex items-center justify-between">
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Extracted Signal Matrix</h4>
+<span class="font-mono-sm text-mono-sm text-outline">Live Breakdown</span>
+</div>
+<div class="flex flex-wrap gap-2">
+<div class="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-[16px] text-secondary">trending_up</span>
+<div class="flex flex-col">
+<span class="font-mono-sm text-mono-sm text-on-surface font-semibold">342 Hiring</span>
+<span class="font-mono-sm text-mono-sm text-outline">+24% Eng velocity</span>
+</div>
+</div>
+<div class="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-[16px] text-tertiary">monetization_on</span>
+<div class="flex flex-col">
+<span class="font-mono-sm text-mono-sm text-on-surface font-semibold">280 Funding</span>
+<span class="font-mono-sm text-mono-sm text-outline">Series A to Growth</span>
+</div>
+</div>
+<div class="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-[16px] text-primary">code_blocks</span>
+<div class="flex flex-col">
+<span class="font-mono-sm text-mono-sm text-on-surface font-semibold">410 Tech Match</span>
+<span class="font-mono-sm text-mono-sm text-outline">AWS / PyTorch stack</span>
+</div>
+</div>
+<div class="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-[16px] text-secondary">dns</span>
+<div class="flex flex-col">
+<span class="font-mono-sm text-mono-sm text-on-surface font-semibold">189 DNS MX/DKIM</span>
+<span class="font-mono-sm text-mono-sm text-outline">High deliverability</span>
+</div>
+</div>
+</div>
+<!-- Primary CTA Button -->
+<div class="pt-space-xs flex justify-end">
+<a class="w-full flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg bg-primary hover:bg-primary-fixed-dim text-on-primary font-body-default text-body-default font-semibold shadow-md transition-all" href="#">
+<span class="material-symbols-outlined text-[18px]">table_view</span>
+<span>Open Live Lead Explorer (482 Qualified)</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+</div>
+<!-- Active Entity Triage Preview Carousel -->
+<section class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[20px]">radar</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Recent Deterministic Matches Under Scrutiny</h3>
+</div>
+<div class="flex items-center gap-2 font-mono-sm text-mono-sm text-outline">
+<span>Auto-enriching 12 records/sec</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-space-md">
+<!-- Entity Card 1 -->
+<div class="rounded-xl bg-surface-container p-space-md flex flex-col justify-between gap-space-md shadow-sm hover:bg-surface-container-high transition-all">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-9 h-9 rounded-lg bg-surface-container-highest flex items-center justify-center font-mono-default font-bold text-secondary flex-shrink-0">
+                  SX
+                </div>
+<div class="flex flex-col truncate">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Synthetix AI</span>
+<span class="font-mono-sm text-mono-sm text-outline truncate">synthetix.cloud • Boston, MA</span>
+</div>
+</div>
+<span class="px-2 py-1 rounded bg-tertiary/15 text-tertiary font-mono-sm text-mono-sm font-bold flex-shrink-0">
+                94 / 100
+              </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+              Autonomous agent orchestration platform for enterprise data pipelines. 180 FTEs, Series B ($34M).
+            </p>
+<div class="flex flex-wrap gap-1 mt-1">
+<span class="px-2 py-0.5 rounded bg-surface-container-lowest text-outline font-mono-sm text-mono-sm">AWS PyTorch</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-lowest text-outline font-mono-sm text-mono-sm">Kubernetes</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-lowest text-tertiary font-mono-sm text-mono-sm">+18 Hiring</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs text-outline font-mono-sm text-mono-sm">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px] text-tertiary">check</span> ICP Verified</span>
+<button class="text-secondary hover:text-on-surface transition-colors flex items-center gap-1 font-mono-sm text-mono-sm">
+              Inspector <span class="material-symbols-outlined text-[14px]">chevron_right</span>
+</button>
+</div>
+</div>
+<!-- Entity Card 2 -->
+<div class="rounded-xl bg-surface-container p-space-md flex flex-col justify-between gap-space-md shadow-sm hover:bg-surface-container-high transition-all">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-9 h-9 rounded-lg bg-surface-container-highest flex items-center justify-center font-mono-default font-bold text-primary flex-shrink-0">
+                  NF
+                </div>
+<div class="flex flex-col truncate">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">NeuralFlow Labs</span>
+<span class="font-mono-sm text-mono-sm text-outline truncate">neuralflow.dev • San Francisco, CA</span>
+</div>
+</div>
+<span class="px-2 py-1 rounded bg-tertiary/15 text-tertiary font-mono-sm text-mono-sm font-bold flex-shrink-0">
+                91 / 100
+              </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+              High-throughput ML compiler runtime for LLM quantization. 95 FTEs, Series A ($18M).
+            </p>
+<div class="flex flex-wrap gap-1 mt-1">
+<span class="px-2 py-0.5 rounded bg-surface-container-lowest text-outline font-mono-sm text-mono-sm">Python / Triton</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-lowest text-outline font-mono-sm text-mono-sm">CUDA Core</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-lowest text-tertiary font-mono-sm text-mono-sm">+12 Eng Roles</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs text-outline font-mono-sm text-mono-sm">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px] text-tertiary">check</span> ICP Verified</span>
+<button class="text-secondary hover:text-on-surface transition-colors flex items-center gap-1 font-mono-sm text-mono-sm">
+              Inspector <span class="material-symbols-outlined text-[14px]">chevron_right</span>
+</button>
+</div>
+</div>
+<!-- Entity Card 3 -->
+<div class="rounded-xl bg-surface-container p-space-md flex flex-col justify-between gap-space-md shadow-sm hover:bg-surface-container-high transition-all">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-9 h-9 rounded-lg bg-surface-container-highest flex items-center justify-center font-mono-default font-bold text-secondary flex-shrink-0">
+                  QS
+                </div>
+<div class="flex flex-col truncate">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">QuantScale Systems</span>
+<span class="font-mono-sm text-mono-sm text-outline truncate">quantscale.io • New York, NY</span>
+</div>
+</div>
+<span class="px-2 py-1 rounded bg-secondary/15 text-secondary font-mono-sm text-mono-sm font-bold flex-shrink-0">
+                86 / 100
+              </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+              Financial market telemetry &amp; quantitative predictive engines. 220 FTEs, Growth Stage.
+            </p>
+<div class="flex flex-wrap gap-1 mt-1">
+<span class="px-2 py-0.5 rounded bg-surface-container-lowest text-outline font-mono-sm text-mono-sm">AWS East</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-lowest text-outline font-mono-sm text-mono-sm">FastAPI</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-lowest text-secondary font-mono-sm text-mono-sm">Duplicate Cluster #12</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs text-outline font-mono-sm text-mono-sm">
+<span class="flex items-center gap-1 text-secondary"><span class="material-symbols-outlined text-[14px]">sync</span> Dedup Pending</span>
+<button class="text-secondary hover:text-on-surface transition-colors flex items-center gap-1 font-mono-sm text-mono-sm">
+              Inspector <span class="material-symbols-outlined text-[14px]">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+<script>
+  // Live Telemetry Event Loop Micro-Interaction
+  let isPaused = false;
+  let secondsElapsed = 272; // 04m 32s
+
+  const sampleEvents = [
+    { type: 'SCORING', text: "Calculated deterministic fit 92/100 for 'HyperVector Inc' (+25 Tech, +20 Geo, +20 FTE)", color: 'text-tertiary' },
+    { type: 'ENRICH', text: "Extracted 14 tech stack signatures from sitemap.xml for 'CortexMesh Corp'", color: 'text-primary' },
+    { type: 'QUALIFY', text: "Rule gate pass: 250 FTE verified via SEC Edgar reference filings", color: 'text-secondary' },
+    { type: 'SAFETY', text: "Rate limit auto-throttled to 2.4 req/sec conforming to host robots.txt", color: 'text-tertiary' },
+    { type: 'DEDUP', text: "Cluster match: Resolved 'synthetix.io' alias to canonical 'synthetix.cloud'", color: 'text-primary' }
+  ];
+
+  function formatTime(secs) {
+    const m = Math.floor(secs / 60).toString().padStart(2, '0');
+    const s = (secs % 60).toString().padStart(2, '0');
+    return `${m}m ${s}s`;
+  }
+
+  function getTimestamp() {
+    const now = new Date();
+    return `[${now.toTimeString().split(' ')[0]}]`;
+  }
+
+  setInterval(() => {
+    if (isPaused) return;
+    secondsElapsed++;
+    const counterEl = document.getElementById('elapsedCounter');
+    if (counterEl) counterEl.textContent = formatTime(secondsElapsed);
+
+    // Occasionally stream a new log item
+    if (Math.random() > 0.4) {
+      const feed = document.getElementById('telemetryFeed');
+      if (feed) {
+        const item = sampleEvents[Math.floor(Math.random() * sampleEvents.length)];
+        const row = document.createElement('div');
+        row.className = 'p-space-xs rounded bg-surface-container/60 hover:bg-surface-container flex items-start gap-space-sm transition-colors';
+        row.innerHTML = `
+          <span class="text-outline flex-shrink-0">${getTimestamp()}</span>
+          <span class="${item.color} font-semibold flex-shrink-0">${item.type}:</span>
+          <span class="text-on-surface">${item.text}</span>
+        `;
+        feed.appendChild(row);
+        feed.scrollTop = feed.scrollHeight;
+      }
+    }
+  }, 1000);
+
+  function togglePauseState() {
+    isPaused = !isPaused;
+    const btn = document.getElementById('pauseBtn');
+    if (btn) {
+      btn.innerHTML = isPaused 
+        ? `<span class="material-symbols-outlined text-[16px] text-tertiary">play_arrow</span><span class="font-mono-sm text-mono-sm">Resume Run</span>`
+        : `<span class="material-symbols-outlined text-[16px] text-secondary">pause</span><span class="font-mono-sm text-mono-sm">Pause Run</span>`;
+    }
+  }
+
+  function confirmAbort() {
+    if (window.confirm("Abort Research Run #0024? Current progress and 482 qualified records will be preserved in your workspace.")) {
+      alert("Research run suspended safely. All validated targets saved to Lead Explorer.");
+    }
+  }
+
+  function clearConsoleLog() {
+    const feed = document.getElementById('telemetryFeed');
+    if (feed) {
+      feed.innerHTML = `
+        <div class="p-space-xs rounded bg-secondary/10 flex items-start gap-space-sm transition-all">
+          <span class="text-secondary flex-shrink-0">${getTimestamp()}</span>
+          <span class="text-secondary font-semibold flex-shrink-0">SYS:</span>
+          <span class="text-on-surface">Console stream reset. Live audit continuing in background...</span>
+        </div>
+      `;
+    }
+  }
+</script></main></div></body></html>

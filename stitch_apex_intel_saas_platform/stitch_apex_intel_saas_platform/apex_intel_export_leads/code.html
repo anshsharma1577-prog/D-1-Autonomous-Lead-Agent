@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-tertiary-container": "#002d40", "on-surface-variant": "#c7c4d7", "surface-container-lowest": "#010f1f", "surface-container-highest": "#273647", "tertiary-fixed-dim": "#7bd0ff", "on-background": "#d4e4fa", "primary-container": "#8083ff", "tertiary-container": "#009bd1", "primary-fixed": "#e1e0ff", "inverse-surface": "#d4e4fa", "error-container": "#93000a", "inverse-primary": "#494bd6", "on-primary-fixed": "#07006c", "on-surface": "#d4e4fa", "surface-dim": "#051424", "secondary": "#45dfa4", "secondary-fixed": "#68fcbf", "surface-tint": "#c0c1ff", "secondary-fixed-dim": "#45dfa4", "primary-fixed-dim": "#c0c1ff", "on-primary-container": "#0d0096", "background": "#051424", "surface-bright": "#2c3a4c", "outline-variant": "#464554", "outline": "#908fa0", "on-primary": "#1000a9", "surface-variant": "#273647", "on-error": "#690005", "surface-container-low": "#0d1c2d", "on-secondary-container": "#00452e", "on-secondary-fixed-variant": "#005137", "on-secondary": "#003825", "surface-container-high": "#1c2b3c", "on-tertiary-fixed": "#001e2c", "secondary-container": "#00bd85", "tertiary-fixed": "#c4e7ff", "on-tertiary": "#00354a", "surface": "#051424", "on-secondary-fixed": "#002114", "surface-container": "#122131", "on-primary-fixed-variant": "#2f2ebe", "tertiary": "#7bd0ff", "error": "#ffb4ab", "on-error-container": "#ffdad6", "inverse-on-surface": "#233143", "primary": "#c0c1ff", "on-tertiary-fixed-variant": "#004c69" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "gutter": "1rem", "space-xl": "2rem", "space-xs": "0.25rem", "space-md": "0.75rem", "margin": "1.5rem", "margin-desktop": "2rem", "gutter-desktop": "1.5rem", "space-sm": "0.5rem", "space-lg": "1.25rem" }, "fontFamily": { "body-sm": ["Geist"], "code-sm": ["JetBrains Mono"], "display-mobile": ["Geist"], "headline-lg": ["Geist"], "headline-lg-mobile": ["Geist"], "label-md": ["Geist"], "display": ["Geist"], "body-md": ["Geist"], "body-lg": ["Geist"], "headline-md": ["Geist"], "label-sm": ["Geist"] }, "fontSize": { "body-sm": ["0.8125rem", { "lineHeight": "1.25rem", "letterSpacing": "0em", "fontWeight": "400" }], "code-sm": ["0.75rem", { "lineHeight": "1rem", "letterSpacing": "0em", "fontWeight": "400" }], "display-mobile": ["1.75rem", { "lineHeight": "2.25rem", "letterSpacing": "-0.02em", "fontWeight": "600" }], "headline-lg": ["1.5rem", { "lineHeight": "2rem", "letterSpacing": "-0.02em", "fontWeight": "600" }], "headline-lg-mobile": ["1.25rem", { "lineHeight": "1.75rem", "letterSpacing": "-0.015em", "fontWeight": "600" }], "label-md": ["0.8125rem", { "lineHeight": "1rem", "letterSpacing": "0em", "fontWeight": "500" }], "display": ["2.25rem", { "lineHeight": "2.75rem", "letterSpacing": "-0.025em", "fontWeight": "600" }], "body-md": ["0.875rem", { "lineHeight": "1.5rem", "letterSpacing": "-0.005em", "fontWeight": "400" }], "body-lg": ["1rem", { "lineHeight": "1.625rem", "letterSpacing": "-0.01em", "fontWeight": "400" }], "headline-md": ["1.125rem", { "lineHeight": "1.5rem", "letterSpacing": "-0.015em", "fontWeight": "500" }], "label-sm": ["0.75rem", { "lineHeight": "0.9375rem", "letterSpacing": "0.01em", "fontWeight": "500" }] } } } };</script></head><body class="bg-background font-body-md text-on-surface antialiased min-h-screen"><aside class="fixed left-0 top-0 bottom-0 w-64 bg-surface-container-lowest flex flex-col z-50 select-none"><div class="h-14 px-space-lg flex items-center justify-between"><div class="flex items-center gap-space-sm"><div class="w-6 h-6 rounded bg-primary-container/20 flex items-center justify-center text-primary"><span class="material-symbols-outlined text-[16px]">polyline</span></div><span class="font-label-md text-label-md tracking-tight text-on-surface font-semibold">Apex Intel</span></div><span class="font-code-sm text-code-sm px-1.5 py-0.5 rounded bg-surface-container-high text-outline">v2.4</span></div><div class="px-space-md py-space-xs"><div class="px-space-sm py-space-xs rounded-lg bg-surface-container-low flex items-center justify-between"><div class="flex flex-col min-w-0"><span class="font-label-sm text-label-sm text-on-surface truncate">Acme Growth</span><div class="flex items-center gap-1.5 mt-0.5"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span><span class="font-code-sm text-code-sm text-outline-variant text-[10px]">Connected</span></div></div><span class="material-symbols-outlined text-outline text-[16px]">unfold_more</span></div></div><div class="px-space-md my-space-xs"><div class="h-px bg-surface-container"></div></div><nav class="flex-1 px-space-md space-y-space-xs" data-active-classes="bg-surface-container-high text-on-surface font-medium"><a class="flex items-center gap-space-sm px-space-sm py-1.5 rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="overview" href="#"><span class="material-symbols-outlined text-[18px]">dashboard</span>Overview</a><a class="flex items-center gap-space-sm px-space-sm py-1.5 rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="icp-builder" href="#"><span class="material-symbols-outlined text-[18px]">filter_alt</span>ICP Builder</a><a class="flex items-center gap-space-sm px-space-sm py-1.5 rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="research" href="#"><span class="material-symbols-outlined text-[18px]">travel_explore</span>Research</a><a class="flex items-center gap-space-sm px-space-sm py-1.5 rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="leads" href="#"><span class="material-symbols-outlined text-[18px]">group</span>Leads</a><a class="flex items-center gap-space-sm px-space-sm py-1.5 rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="saved" href="#"><span class="material-symbols-outlined text-[18px]">bookmark</span>Saved</a><a aria-current="page" class="flex items-center gap-space-sm px-space-sm py-1.5 rounded-lg transition-colors bg-surface-container-high text-on-surface font-medium" data-path="exports" href="#"><span class="material-symbols-outlined text-[18px]">download</span>Exports</a></nav><div class="px-space-md space-y-space-xs"><div class="h-px bg-surface-container"></div><a class="flex items-center gap-space-sm px-space-sm py-1.5 rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="settings" href="#"><span class="material-symbols-outlined text-[18px]">settings</span>Settings</a></div><div class="p-space-md mt-space-xs"><div class="flex items-center gap-space-sm p-space-xs rounded-lg bg-surface-container-low"><div class="w-8 h-8 rounded-full bg-surface-container-highest flex items-center justify-center font-label-md text-label-md text-primary font-medium shrink-0">AS</div><div class="flex flex-col min-w-0"><span class="font-label-md text-label-md text-on-surface truncate">Ansh Sharma</span><span class="font-code-sm text-code-sm text-outline truncate">Head of GTM</span></div></div></div></aside><div class="pl-64 flex flex-col min-h-screen"><header class="fixed top-0 left-64 right-0 h-14 bg-background/80 backdrop-blur-xl z-40 flex items-center justify-between px-margin-desktop"><div class="flex items-center gap-space-sm"><span class="font-body-sm text-body-sm text-outline">Workspace</span><span class="font-body-sm text-body-sm text-outline-variant">/</span><span class="font-label-md text-label-md text-on-surface">Intelligence Pipeline</span></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-sm bg-surface-container-lowest px-space-md py-1 rounded-lg"><span class="material-symbols-outlined text-outline text-[16px]">search</span><input class="bg-transparent border-none outline-none font-body-sm text-body-sm text-on-surface placeholder-outline w-52" placeholder="Search entities, signals..." type="text"/><span class="font-code-sm text-code-sm px-1 py-0.5 rounded bg-surface-container-high text-outline text-[10px]">⌘K</span></div><button class="w-8 h-8 rounded-lg flex items-center justify-center text-outline hover:text-on-surface hover:bg-surface-container-high transition-colors"><span class="material-symbols-outlined text-[18px]">notifications</span></button><div class="h-4 w-px bg-surface-container"></div><div class="flex items-center gap-space-xs px-2 py-1 rounded bg-surface-container text-on-surface"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span><span class="font-code-sm text-code-sm text-on-surface-variant">US-EAST-1</span></div></div></header><main class="w-full pt-14 px-margin-desktop flex-1 bg-background"><div class="flex flex-col w-full pb-16">
+<!-- Dynamic Status / Top Utility Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4 py-8">
+<div class="space-y-1.5">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded bg-surface-container-high font-code-sm text-code-sm text-tertiary">MODULE: EXPORT_DATA</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span class="font-code-sm text-code-sm text-outline">Pipeline Sync Engine 4.1</span>
+</div>
+<h1 class="font-display text-display text-on-surface tracking-tight">Export your leads</h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">
+        Choose what you'd like to export to your CRM, spreadsheet, or downstream automated sales workflow.
+      </p>
+</div>
+<!-- Live Payload Summary Pill -->
+<div class="flex items-center gap-3 px-4 py-2.5 rounded-xl bg-surface-container-low shadow-sm shrink-0">
+<div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">cloud_sync</span>
+</div>
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Estimated Payload</span>
+<span class="font-code-sm text-code-sm px-1 rounded bg-secondary/10 text-secondary text-[10px]">Verified</span>
+</div>
+<p class="font-code-sm text-code-sm text-on-surface font-semibold" id="dynamicPayloadMetric">48 Records ~ 64 KB</p>
+</div>
+</div>
+</div>
+<!-- Primary Asymmetric Layout Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- Left Column: Interactive Export Configuration Form -->
+<div class="lg:col-span-8 space-y-6">
+<div class="rounded-xl bg-surface-container-low p-6 md:p-8 shadow-sm space-y-8">
+<!-- SECTION 1: Source Entity Scope Selection -->
+<section class="space-y-4">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="font-code-sm text-code-sm w-5 h-5 rounded bg-surface-container-highest flex items-center justify-center text-on-surface">01</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">What to export</h2>
+</div>
+<span class="font-label-sm text-label-sm text-outline">Required</span>
+</div>
+<div class="space-y-3" id="scopeSelectionGroup">
+<!-- Radio Option 1 (Default Selected) -->
+<label class="scope-card relative flex items-start gap-4 p-4 rounded-lg bg-surface-container cursor-pointer shadow-sm hover:bg-surface-container-high transition-colors" data-records="48 leads" data-size="64 KB">
+<div class="pt-0.5">
+<input checked="" class="w-4 h-4 accent-primary-container cursor-pointer mt-0.5" name="export_scope" type="radio" value="filtered"/>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between gap-2">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Current filtered leads</span>
+<span class="font-code-sm text-code-sm px-2 py-0.5 rounded-full bg-primary/10 text-primary">48 leads</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Matches your current active filters and view parameters in Lead Explorer.</p>
+</div>
+</label>
+<!-- Radio Option 2 -->
+<label class="scope-card relative flex items-start gap-4 p-4 rounded-lg bg-surface-container-lowest cursor-pointer shadow-sm hover:bg-surface-container-high transition-colors" data-records="482 leads" data-size="520 KB">
+<div class="pt-0.5">
+<input class="w-4 h-4 accent-primary-container cursor-pointer mt-0.5" name="export_scope" type="radio" value="qualified"/>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between gap-2">
+<span class="font-label-md text-label-md text-on-surface font-semibold">All qualified leads</span>
+<span class="font-code-sm text-code-sm px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant">482 leads</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">All prospects scored 80+ across active execution pipelines and accounts.</p>
+</div>
+</label>
+<!-- Radio Option 3 -->
+<label class="scope-card relative flex items-start gap-4 p-4 rounded-lg bg-surface-container-lowest cursor-pointer shadow-sm hover:bg-surface-container-high transition-colors" data-records="1,248 accounts" data-size="1.8 MB">
+<div class="pt-0.5">
+<input class="w-4 h-4 accent-primary-container cursor-pointer mt-0.5" name="export_scope" type="radio" value="entire_run"/>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between gap-2">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Entire research run</span>
+<span class="font-code-sm text-code-sm px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant">1,248 accounts</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Includes unqualified raw profiles, pending enrichment, and reviewing dossiers.</p>
+</div>
+</label>
+</div>
+</section>
+<!-- SECTION 2: Format & CRM Destinations -->
+<section class="space-y-6 pt-6 bg-surface-container/30 -mx-6 md:-mx-8 px-6 md:px-8 py-6 rounded-lg">
+<div class="flex items-center gap-2">
+<span class="font-code-sm text-code-sm w-5 h-5 rounded bg-surface-container-highest flex items-center justify-center text-on-surface">02</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">File format & destination</h2>
+</div>
+<!-- Format Picker -->
+<div class="space-y-2">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider block">Standard File Deliverables</span>
+<div class="grid grid-cols-3 gap-3" id="formatSelector">
+<button class="format-pill px-4 py-3 rounded-lg bg-primary-container/20 text-primary font-label-md text-label-md flex flex-col items-center justify-center gap-1.5 text-center shadow-sm" data-format="CSV" type="button">
+<span class="material-symbols-outlined text-[20px]">table</span>
+<span class="font-semibold">CSV (.csv)</span>
+<span class="font-code-sm text-code-sm text-[10px] opacity-80">Default delimiter</span>
+</button>
+<button class="format-pill px-4 py-3 rounded-lg bg-surface-container text-on-surface-variant font-label-md text-label-md flex flex-col items-center justify-center gap-1.5 text-center hover:bg-surface-container-high hover:text-on-surface transition-colors shadow-sm" data-format="XLSX" type="button">
+<span class="material-symbols-outlined text-[20px]">grid_on</span>
+<span class="font-semibold">Excel (.xlsx)</span>
+<span class="font-code-sm text-code-sm text-[10px] opacity-70">Formatted workbook</span>
+</button>
+<button class="format-pill px-4 py-3 rounded-lg bg-surface-container text-on-surface-variant font-label-md text-label-md flex flex-col items-center justify-center gap-1.5 text-center hover:bg-surface-container-high hover:text-on-surface transition-colors shadow-sm" data-format="JSON" type="button">
+<span class="material-symbols-outlined text-[20px]">data_object</span>
+<span class="font-semibold">JSON</span>
+<span class="font-code-sm text-code-sm text-[10px] opacity-70">Structured API tree</span>
+</button>
+</div>
+</div>
+<!-- Direct Integration Toggles -->
+<div class="space-y-3 pt-2">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider block">Direct CRM Integrations</span>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+<!-- Salesforce Toggle Card -->
+<div class="flex items-center justify-between p-3.5 rounded-lg bg-surface-container shadow-sm hover:bg-surface-container-high transition-colors">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded bg-surface-container-highest flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[18px]">cloud</span>
+</div>
+<div>
+<div class="font-label-md text-label-md text-on-surface font-medium">Push to Salesforce</div>
+<div class="font-code-sm text-code-sm text-outline text-[11px]">Apex_Live_Prod_v2</div>
+</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input class="sr-only peer" id="toggleSalesforce" type="checkbox"/>
+<div class="w-10 h-5 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-on-surface after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary-container"></div>
+</label>
+</div>
+<!-- HubSpot Toggle Card -->
+<div class="flex items-center justify-between p-3.5 rounded-lg bg-surface-container shadow-sm hover:bg-surface-container-high transition-colors">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded bg-surface-container-highest flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[18px]">hub</span>
+</div>
+<div>
+<div class="font-label-md text-label-md text-on-surface font-medium">Sync to HubSpot</div>
+<div class="font-code-sm text-code-sm text-outline text-[11px]">Primary Workspace (EU)</div>
+</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input class="sr-only peer" id="toggleHubSpot" type="checkbox"/>
+<div class="w-10 h-5 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-on-surface after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary-container"></div>
+</label>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 3: Field Attributes Preview -->
+<section class="space-y-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="font-code-sm text-code-sm w-5 h-5 rounded bg-surface-container-highest flex items-center justify-center text-on-surface">03</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Fields included in payload</h2>
+</div>
+<span class="font-code-sm text-code-sm text-secondary font-medium">8 of 8 enabled</span>
+</div>
+<div class="flex flex-wrap gap-2 pt-1" id="attributeBadges">
+<span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container font-label-md text-label-md text-on-surface">
+<span class="material-symbols-outlined text-[14px] text-secondary">check</span> Company Name
+            </span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container font-label-md text-label-md text-on-surface">
+<span class="material-symbols-outlined text-[14px] text-secondary">check</span> Domain
+            </span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container font-label-md text-label-md text-on-surface">
+<span class="material-symbols-outlined text-[14px] text-secondary">check</span> Location
+            </span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container font-label-md text-label-md text-on-surface">
+<span class="material-symbols-outlined text-[14px] text-secondary">check</span> Employees
+            </span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container font-label-md text-label-md text-on-surface">
+<span class="material-symbols-outlined text-[14px] text-secondary">check</span> Fit Score
+            </span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container font-label-md text-label-md text-on-surface">
+<span class="material-symbols-outlined text-[14px] text-secondary">check</span> Confidence
+            </span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container font-label-md text-label-md text-on-surface">
+<span class="material-symbols-outlined text-[14px] text-secondary">check</span> Buying Signals
+            </span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container font-label-md text-label-md text-on-surface">
+<span class="material-symbols-outlined text-[14px] text-secondary">check</span> Evidence URLs
+            </span>
+</div>
+</section>
+<!-- Action CTAs -->
+<div class="pt-4 flex flex-col sm:flex-row items-center justify-between gap-4">
+<div class="flex items-center gap-2 text-outline font-body-sm text-body-sm order-2 sm:order-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">verified_user</span>
+<span>Audit log updated upon execution</span>
+</div>
+<div class="flex items-center gap-3 w-full sm:w-auto order-1 sm:order-2">
+<button class="w-full sm:w-auto px-5 py-2.5 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high font-label-md text-label-md transition-colors text-center" type="button">
+              Cancel
+            </button>
+<button class="w-full sm:w-auto px-7 py-2.5 rounded-lg bg-primary-container text-on-primary-container hover:opacity-90 font-label-md text-label-md font-semibold transition-all shadow-md flex items-center justify-center gap-2" id="executeExportBtn" type="button">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>Export leads</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Visual Summary Dock & Verification -->
+<div class="lg:col-span-4 space-y-6">
+<!-- Live Schema & Spec Blueprint -->
+<div class="rounded-xl bg-surface-container-low p-6 shadow-sm space-y-5">
+<div class="flex items-center justify-between">
+<span class="font-code-sm text-code-sm text-outline uppercase tracking-wider">File Spec Blueprint</span>
+<span class="font-code-sm text-code-sm text-secondary bg-secondary/10 px-2 py-0.5 rounded">Ready to dispatch</span>
+</div>
+<div class="space-y-3 font-code-sm text-code-sm bg-surface-container p-4 rounded-lg">
+<div class="flex justify-between pb-2">
+<span class="text-on-surface-variant">FORMAT</span>
+<span class="text-on-surface font-semibold" id="specFormatDisplay">CSV (RFC-4180)</span>
+</div>
+<div class="flex justify-between pb-2">
+<span class="text-on-surface-variant">ENCODING</span>
+<span class="text-on-surface">UTF-8 without BOM</span>
+</div>
+<div class="flex justify-between pb-2">
+<span class="text-on-surface-variant">ROW_COUNT</span>
+<span class="text-on-surface font-semibold" id="specCountDisplay">48 Records</span>
+</div>
+<div class="flex justify-between pb-2">
+<span class="text-on-surface-variant">TARGET_COLUMNS</span>
+<span class="text-on-surface">8 Attributes</span>
+</div>
+<div class="flex justify-between">
+<span class="text-on-surface-variant">EST_LATENCY</span>
+<span class="text-secondary">< 1.2s instant fetch</span>
+</div>
+</div>
+<!-- Inline Data Visualizer: Mini Distribution Bar -->
+<div class="space-y-2 pt-1">
+<div class="flex justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>Score distribution (Selected 48)</span>
+<span class="text-primary font-semibold">91.4% avg match</span>
+</div>
+<div class="w-full h-2.5 rounded-full bg-surface-container flex overflow-hidden">
+<div class="h-full bg-secondary" style="width: 72%" title="90-100 Score"></div>
+<div class="h-full bg-tertiary" style="width: 20%" title="80-89 Score"></div>
+<div class="h-full bg-outline-variant" style="width: 8%" title="Below 80"></div>
+</div>
+<div class="flex items-center justify-between font-code-sm text-code-sm text-outline text-[10px] pt-1">
+<span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-secondary"></span> Tier 1 (72%)</span>
+<span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-tertiary"></span> Tier 2 (20%)</span>
+<span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-outline-variant"></span> Other (8%)</span>
+</div>
+</div>
+</div>
+<!-- Live Sync Status Cards -->
+<div class="rounded-xl bg-surface-container-low p-6 shadow-sm space-y-4">
+<h3 class="font-headline-md text-headline-md text-on-surface">Security & Compliance</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Exports are encrypted via AES-256 both in transit and at rest. Export snapshots are retained for 30 days before purge.
+        </p>
+<div class="flex items-center gap-3 p-3 rounded-lg bg-surface-container">
+<span class="material-symbols-outlined text-secondary text-[22px]">lock</span>
+<div class="min-w-0">
+<div class="font-label-md text-label-md text-on-surface">SOC2 Type II Certified</div>
+<div class="font-code-sm text-code-sm text-outline text-[11px]">Audit token: 7FA-9821-X9</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- RECENT EXPORTS SECTION -->
+<div class="mt-12 space-y-4">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Recent exports</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Log of all downloadable lead sets generated within the last 30 days.</p>
+</div>
+<button class="flex items-center gap-1.5 font-label-md text-label-md text-primary hover:text-on-surface transition-colors self-start sm:self-auto">
+<span>View detailed audit history</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+<!-- Data Table Container -->
+<div class="rounded-xl bg-surface-container-low overflow-hidden shadow-sm">
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container text-outline font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-3.5 px-6 font-medium">Archive / Filename</th>
+<th class="py-3.5 px-4 font-medium">Volume</th>
+<th class="py-3.5 px-4 font-medium">Format</th>
+<th class="py-3.5 px-4 font-medium">Timestamp</th>
+<th class="py-3.5 px-4 font-medium">Status</th>
+<th class="py-3.5 px-6 text-right font-medium">Action</th>
+</tr>
+</thead>
+<tbody class="divide-y-0">
+<!-- Row 1 -->
+<tr class="hover:bg-surface-container transition-colors group">
+<td class="py-4 px-6">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded bg-surface-container-highest flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[18px]">description</span>
+</div>
+<div class="min-w-0">
+<span class="font-label-md text-label-md text-on-surface font-semibold truncate block">B2B_SaaS_Qualified_Leads.csv</span>
+<span class="font-code-sm text-code-sm text-outline">Lead Explorer • Filter preset "US Growth High-Fit"</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-4 font-code-sm text-code-sm text-on-surface">
+                48 leads
+              </td>
+<td class="py-4 px-4">
+<span class="font-code-sm text-code-sm px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant uppercase">CSV</span>
+</td>
+<td class="py-4 px-4 font-body-sm text-body-sm text-on-surface-variant">
+                Today, 10:45 AM
+              </td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-secondary/10 text-secondary font-code-sm text-code-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Ready
+                </span>
+</td>
+<td class="py-4 px-6 text-right">
+<button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-surface-container text-on-surface hover:bg-surface-container-high hover:text-primary transition-colors font-label-md text-label-md" type="button">
+<span class="material-symbols-outlined text-[16px]">download</span>
+<span>Download again</span>
+</button>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface-container transition-colors group">
+<td class="py-4 px-6">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded bg-surface-container-highest flex items-center justify-center text-tertiary shrink-0">
+<span class="material-symbols-outlined text-[18px]">table_view</span>
+</div>
+<div class="min-w-0">
+<span class="font-label-md text-label-md text-on-surface font-semibold truncate block">Fintech_US_Oct24.csv</span>
+<span class="font-code-sm text-code-sm text-outline">Target Persona • Series B+ Funding Stage</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-4 font-code-sm text-code-sm text-on-surface">
+                31 leads
+              </td>
+<td class="py-4 px-4">
+<span class="font-code-sm text-code-sm px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant uppercase">CSV</span>
+</td>
+<td class="py-4 px-4 font-body-sm text-body-sm text-on-surface-variant">
+                Yesterday
+              </td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-secondary/10 text-secondary font-code-sm text-code-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Ready
+                </span>
+</td>
+<td class="py-4 px-6 text-right">
+<button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-surface-container text-on-surface hover:bg-surface-container-high hover:text-primary transition-colors font-label-md text-label-md" type="button">
+<span class="material-symbols-outlined text-[16px]">download</span>
+<span>Download again</span>
+</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<!-- Notification Toast Modal Simulation -->
+<div class="fixed bottom-6 right-8 hidden z-50 transition-all transform duration-300" id="exportFeedbackToast">
+<div class="flex items-center gap-3 px-5 py-3 rounded-lg bg-surface-container-high text-on-surface shadow-2xl">
+<span class="material-symbols-outlined text-secondary text-[22px]">check_circle</span>
+<div>
+<div class="font-label-md text-label-md font-semibold">Export generated successfully</div>
+<div class="font-code-sm text-code-sm text-on-surface-variant" id="feedbackDetail">Downloading CSV payload archive...</div>
+</div>
+<button class="ml-3 text-outline hover:text-on-surface" onclick="document.getElementById('exportFeedbackToast').classList.add('hidden')">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+</div>
+<script>
+    (function initExportScreen() {
+      const scopeRadios = document.querySelectorAll('input[name="export_scope"]');
+      const scopeCards = document.querySelectorAll('.scope-card');
+      const payloadDisplay = document.getElementById('dynamicPayloadMetric');
+      const specCountDisplay = document.getElementById('specCountDisplay');
+      const specFormatDisplay = document.getElementById('specFormatDisplay');
+      const formatPills = document.querySelectorAll('.format-pill');
+      const executeBtn = document.getElementById('executeExportBtn');
+      const feedbackToast = document.getElementById('exportFeedbackToast');
+      const feedbackDetail = document.getElementById('feedbackDetail');
+
+      let currentFormat = 'CSV';
+
+      // Radio Selection Interactivity
+      scopeRadios.forEach(radio => {
+        radio.addEventListener('change', (e) => {
+          scopeCards.forEach(card => {
+            const isMatch = card.contains(e.target);
+            if (isMatch) {
+              card.classList.remove('bg-surface-container-lowest');
+              card.classList.add('bg-surface-container');
+              const records = card.getAttribute('data-records');
+              const size = card.getAttribute('data-size');
+              payloadDisplay.textContent = records + ' ~ ' + size;
+              specCountDisplay.textContent = records;
+            } else {
+              card.classList.remove('bg-surface-container');
+              card.classList.add('bg-surface-container-lowest');
+            }
+          });
+        });
+      });
+
+      // Format Pill Selection
+      formatPills.forEach(pill => {
+        pill.addEventListener('click', () => {
+          formatPills.forEach(p => {
+            p.classList.remove('bg-primary-container/20', 'text-primary');
+            p.classList.add('bg-surface-container', 'text-on-surface-variant');
+          });
+          pill.classList.remove('bg-surface-container', 'text-on-surface-variant');
+          pill.classList.add('bg-primary-container/20', 'text-primary');
+          
+          currentFormat = pill.getAttribute('data-format');
+          if (currentFormat === 'CSV') {
+            specFormatDisplay.textContent = 'CSV (RFC-4180)';
+          } else if (currentFormat === 'XLSX') {
+            specFormatDisplay.textContent = 'Excel Spreadsheet (XLSX)';
+          } else {
+            specFormatDisplay.textContent = 'REST / JSON Array';
+          }
+        });
+      });
+
+      // Export CTA Trigger
+      if (executeBtn) {
+        executeBtn.addEventListener('click', () => {
+          const originalText = executeBtn.innerHTML;
+          executeBtn.disabled = true;
+          executeBtn.innerHTML = '<span class="material-symbols-outlined text-[18px] animate-spin">sync</span><span>Compiling...</span>';
+
+          setTimeout(() => {
+            executeBtn.disabled = false;
+            executeBtn.innerHTML = originalText;
+            
+            feedbackDetail.textContent = 'Export complete: ' + specCountDisplay.textContent + ' generated (' + currentFormat + ')';
+            feedbackToast.classList.remove('hidden');
+
+            setTimeout(() => {
+              feedbackToast.classList.add('hidden');
+            }, 4500);
+          }, 850);
+        });
+      }
+    })();
+  </script>
+</div></main></div></body></html>

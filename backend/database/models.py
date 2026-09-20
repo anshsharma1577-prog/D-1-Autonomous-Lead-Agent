@@ -1,4 +1,4 @@
-from sqlalchemy import Column, Integer, String, Float, Text
+from sqlalchemy import Column, Integer, String, Float, Text, JSON
 from backend.database.database import Base
 
 
@@ -27,3 +27,15 @@ class Lead(Base):
 
     created_at = Column(String)
     updated_at = Column(String)
+
+
+class Run(Base):
+
+    __tablename__ = "runs"
+
+    id = Column(Integer, primary_key=True, index=True)
+    status = Column(String, default="completed")
+    icp = Column(JSON, nullable=True)
+    leads = Column(JSON, nullable=True)
+    events = Column(JSON, nullable=True)
+    created_at = Column(String, nullable=True)
