@@ -1,6 +1,6 @@
 import type { ICPRequest, Lead, Run, RunEvent, PipelineResponse, HealthResponse } from './types';
 
-const API_BASE = import.meta.env.VITE_API_BASE || 'http://127.0.0.1:8000';
+const API_BASE = (import.meta.env.VITE_API_BASE_URL || import.meta.env.VITE_API_BASE || 'http://127.0.0.1:8000').replace(/\/+$/, '');
 
 async function request<T>(endpoint: string, options: RequestInit = {}): Promise<T> {
   const url = `${API_BASE}${endpoint}`;
