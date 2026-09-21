@@ -121,45 +121,7 @@ No automated LinkedIn messaging
 
 Apex Intel focuses on research and intelligence, not unsolicited communication.
 
-🏗️ System Architecture
-                    ┌──────────────────────┐
-                    │      User / UI       │
-                    │   React + Vite       │
-                    └──────────┬───────────┘
-                               │
-                               ▼
-                    ┌──────────────────────┐
-                    │      FastAPI API     │
-                    │      Orchestrator    │
-                    └──────────┬───────────┘
-                               │
-              ┌────────────────┼────────────────┐
-              │                │                │
-              ▼                ▼                ▼
-        ┌───────────┐    ┌────────────┐   ┌────────────┐
-        │ Discovery │    │ Enrichment │   │ Entity     │
-        │   Agent   │    │   Agent    │   │ Resolution │
-        └─────┬─────┘    └─────┬──────┘   └─────┬──────┘
-              │                │                │
-              └────────────────┼────────────────┘
-                               ▼
-                    ┌──────────────────────┐
-                    │ Qualification Agent │
-                    └──────────┬───────────┘
-                               ▼
-                    ┌──────────────────────┐
-                    │ Deterministic Score  │
-                    │      Engine          │
-                    └──────────┬───────────┘
-                               ▼
-                    ┌──────────────────────┐
-                    │ Evidence + Leads DB  │
-                    └──────────┬───────────┘
-                               │
-                               ▼
-                    ┌──────────────────────┐
-                    │ Leads / Export UI    │
-                    └──────────────────────┘
+
 🖥️ Product Interface
 
 Apex Intel uses a research-oriented workspace rather than a traditional chatbot interface.
